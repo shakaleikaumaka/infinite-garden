@@ -322,9 +322,12 @@
     <div class="tx">
       <h3>🎙️ Pragma Tokyo — the Fireside, shelved 🌸</h3>
       <div class="where">Pragma Tokyo · 2026-09-26 · 12:00 JST · Aya Miyaguchi × Tomo Saito · "How Ethereum Grows Without a Center" · captured consent-first (Aya's blessing granted 00:47 JST ✓)</div>
-      <div style="position:relative;width:100%;max-width:720px;margin:14px auto 0;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid rgba(126,201,111,.35)">
-        <iframe src="https://drive.google.com/file/d/1bLyHxHOZbCapLGKMT2pTJ7wdS5w91b-N/preview" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; encrypted-media" allowfullscreen loading="lazy" title="Aya Miyaguchi × Tomo Saito — the Pragma Tokyo fireside"></iframe>
+      <div class="gard-stage">
+        <video id="fsVideo" controls playsinline preload="metadata" poster="https://pit-stream-24jnvrevs3-ffieyo32.taur.link/assets/fireside-poster.jpg" src="https://pit-stream-24jnvrevs3-ffieyo32.taur.link/assets/fireside-hd.mp4" title="Aya Miyaguchi × Tomo Saito — the Pragma Tokyo fireside"></video>
+        <div class="karaoke hide" id="fsKaraoke"><div class="pill"><span id="fsKaraokeText" class="kw-text"></span></div></div>
       </div>
+      <div id="fsCueList" class="cuelist" aria-label="full fireside transcript"></div>
+      <p style="text-align:center;font-size:.85rem;color:var(--muted);font-style:italic;margin:8px auto 0;max-width:40ch">karaoke transcript — the words bloom as they speak 🌿 tap any line to jump to that breath</p>
       <p>The reserved shelf is a shelf no longer — the tape came home the same day. The Mandate made explicit ("you can read every specification, but it is harder to see the <em>why</em>"), CROPS weighed in every choice, the stewards named ("it is no one's — and that is why it is everyone's"), and the AI question answered with alternatives, not surrender. Twenty minutes, front row, whisper-kept.</p>
       <div class="links">
         <a href="https://scribe-pit-34k2lb4zp3-ffieyo32.taur.link/transcripts/aya-tomo-fireside-pragma-2026-09-26.txt" target="_blank" rel="noopener">📜 the scribe's transcript — whisper-kept, timestamped</a>
@@ -627,6 +630,58 @@
 @keyframes ofly{0%{opacity:0;transform:translate(0,0) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx,30px),-90px) rotate(var(--rr,25deg))}}
 .onote.fly{animation:ofly 2.8s ease-out forwards}
 @media (prefers-reduced-motion:reduce){#oflo,#olang,#oviol,#cmag,.oglowing,.onote.fly{animation:none!important}}
+
+/* 🌿 fireside karaoke theater — the words bloom as they speak (same engine as the Live P.I.T.) */
+.gard-stage{position:relative;margin:14px auto 0;border-radius:14px;overflow:hidden;
+  border:1px solid rgba(126,201,111,.35);max-width:400px;background:#000;
+  box-shadow:0 16px 44px rgba(0,0,0,.5)}
+.gard-stage video{display:block;width:100%;aspect-ratio:9/16;background:#000}
+.karaoke{position:absolute;left:0;right:0;bottom:0;z-index:3;pointer-events:none;
+  padding:44px 14px 48px;text-align:center;
+  background:linear-gradient(180deg, transparent 0%, rgba(4,12,6,.55) 46%, rgba(4,12,6,.82) 100%);
+  transition:opacity .28s ease}
+.karaoke.hide{opacity:0}
+.karaoke .pill{position:relative;color:var(--ink);
+  font-family:var(--serif);font-style:italic;font-weight:600;font-size:.95rem;line-height:1.45;
+  text-shadow:0 1px 10px rgba(0,0,0,.65), 0 0 3px rgba(0,0,0,.85)}
+.kw-text .w{display:inline-block}
+.kw-text .w.now{
+  background:linear-gradient(100deg,var(--leaf2) 5%,var(--leaf) 48%,var(--gold2) 98%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.vinegrow{display:block;height:11px;margin:3px auto 0;max-width:min(300px,78%)}
+.vinegrow svg{display:block;width:100%;height:100%;overflow:visible}
+.vinegrow .stem{fill:none;stroke:var(--leaf);stroke-width:2.2;stroke-linecap:round}
+.vinegrow .leaf{transform-origin:center;transform-box:fill-box}
+.vinegrow .bud{fill:var(--petal);transform-origin:center;transform-box:fill-box}
+.vinegrow .bud.b2{fill:#f9d4e4}
+.cuelist{margin:12px auto 0;max-width:400px;max-height:300px;overflow-y:auto;border-radius:14px;
+  border:1px solid rgba(126,201,111,.25);background:rgba(6,14,8,.6);scrollbar-width:thin;text-align:left}
+.cuelist .cue{display:flex;gap:10px;align-items:baseline;padding:8px 14px;cursor:pointer;
+  font-size:.88rem;color:var(--muted);border-bottom:1px solid rgba(255,255,255,.04);transition:background .2s}
+.cuelist .cue:last-child{border-bottom:0}
+.cuelist .cue:hover{background:rgba(255,255,255,.05);color:var(--ink)}
+.cuelist .cue time{font-family:var(--mono);font-size:.72rem;opacity:.7;flex:0 0 auto;min-width:38px}
+.cuelist .cue.on{background:rgba(126,201,111,.14);color:#dcf5d0}
+.cuelist .cue.on time{color:var(--leaf)}
+@media (prefers-reduced-motion: no-preference){
+  .kw-text .w{animation:kwsprout .45s cubic-bezier(.34,1.56,.64,1) backwards;animation-delay:var(--d,0s);
+    transition:transform .16s ease,filter .16s ease}
+  @keyframes kwsprout{
+    0%{opacity:0;transform:translateY(10px) scale(.72) rotate(-2.5deg);filter:blur(3px)}
+    60%{opacity:1;transform:translateY(-2px) scale(1.06) rotate(.8deg);filter:blur(0)}
+    100%{opacity:1;transform:none;filter:none}
+  }
+  .kw-text .w.now{transform:translateY(-1px) scale(1.07);
+    filter:drop-shadow(0 1px 5px rgba(126,201,111,.65))}
+  .karaoke .pill.bloom{animation:pillbloom .4s cubic-bezier(.34,1.56,.64,1) backwards}
+  @keyframes pillbloom{0%{transform:translateY(8px) scale(.94);opacity:.2}100%{transform:none;opacity:1}}
+  .vinegrow .stem{stroke-dasharray:var(--len,110);stroke-dashoffset:var(--len,110);animation:vinegrow var(--dur,3s) linear forwards}
+  @keyframes vinegrow{to{stroke-dashoffset:0}}
+  .vinegrow .leaf{animation:budpop .45s cubic-bezier(.34,1.56,.64,1) var(--ld,.25s) backwards}
+  .vinegrow .bud{animation:budpop .5s cubic-bezier(.34,1.56,.64,1) calc(var(--dur,3s)*.9) backwards}
+  @keyframes budpop{0%{transform:scale(0)}70%{transform:scale(1.35)}100%{transform:scale(1)}}
+}
+@media (prefers-reduced-motion: reduce){.vinegrow{display:none}}
 </style>
 
 <script>
@@ -761,6 +816,126 @@ if(mob()){
 })();
 </script>
 
+<script src="https://pit-stream-24jnvrevs3-ffieyo32.taur.link/assets/fireside-cues.js"></script>
+<script>
+/* -------- 🎙️ garden karaoke engine — words bloom, a vine grows with the voice -------- */
+function gardenTheater(opts){
+  const video=document.getElementById(opts.video),
+        kk=document.getElementById(opts.kk),
+        kkText=document.getElementById(opts.kkText),
+        list=document.getElementById(opts.list),
+        CUES=opts.cues;
+  if(!video||!kk||!kkText||!list||!CUES||!CUES.length)return;
+  const rows=[];
+  CUES.forEach((c,i)=>{
+    const r=document.createElement('div'); r.className='cue';
+    const t=document.createElement('time');
+    const mm=Math.floor(c.t/60), ss=String(c.t%60).padStart(2,'0');
+    t.textContent=mm+':'+ss;
+    const sp=document.createElement('span'); sp.textContent=c.s;
+    r.appendChild(t); r.appendChild(sp);
+    r.onclick=()=>{video.currentTime=c.t+.05; video.play().catch(()=>{});};
+    list.appendChild(r); rows.push(r);
+  });
+  let cur=-1, lastWord=-1;
+  const pill=kk.querySelector('.pill');
+  function activeIdx(t){
+    let lo=0, hi=CUES.length-1, ans=0;
+    while(lo<=hi){const mid=(lo+hi)>>1; if(CUES[mid].t<=t){ans=mid;lo=mid+1;}else hi=mid-1;}
+    return ans;
+  }
+  function cueEnd(i){
+    const c=CUES[i];
+    if(i+1<CUES.length)return Math.min(CUES[i+1].t,c.t+8);
+    return Math.min(c.t+6,video.duration||c.t+6);
+  }
+  /* a fresh little vine per line — stem draws itself, leaves sprout, blossom pops at the end */
+  function vineSVG(){
+    const vg=document.createElement('span'); vg.className='vinegrow';
+    vg.innerHTML='<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">'
+      +'<path class="stem" vector-effect="non-scaling-stroke" d="M2 6 C 22 2, 40 9, 60 4 S 86 7, 98 5"/>'
+      +'<path class="leaf" style="--ld:.3s" d="M30 4 q 4 -6 9 -5 q -3 6 -9 5 Z" fill="#7fb069"/>'
+      +'<path class="leaf" style="--ld:.7s" d="M64 6 q 5 -5 10 -3 q -4 5 -10 3 Z" fill="#3f6b4f"/>'
+      +'<circle class="bud" cx="98" cy="5" r="2.8"/>'
+      +'<circle class="bud b2" cx="95.6" cy="2.4" r="1.5"/>'
+      +'</svg>';
+    return vg;
+  }
+  function renderCue(i){
+    const c=CUES[i], dur=Math.max(cueEnd(i)-c.t,1.2);
+    kkText.textContent='';
+    let wi=0;
+    c.s.split(/(\s+)/).forEach(tok=>{
+      if(!tok)return;
+      if(!tok.trim()){kkText.appendChild(document.createTextNode(tok));return;}
+      const w=document.createElement('span'); w.className='w'; w.textContent=tok;
+      w.style.setProperty('--d',Math.min(wi*0.055,1.1).toFixed(3)+'s');
+      kkText.appendChild(w); wi++;
+    });
+    const old=pill.querySelector('.vinegrow'); if(old)old.remove();
+    const vg=vineSVG(); vg.style.setProperty('--dur',dur.toFixed(2)+'s');
+    pill.appendChild(vg);
+    try{const stem=vg.querySelector('.stem');
+      stem.style.setProperty('--len',stem.getTotalLength().toFixed(1));}catch(e){}
+    /* once a bloom animation ends, strip it — the settled word must be a plain
+       painted element, not a finished animation (headless compositors drop those) */
+    kkText.querySelectorAll('.w').forEach(w=>w.addEventListener('animationend',()=>{w.style.animation='none';},{once:true}));
+    vg.querySelectorAll('.leaf,.bud').forEach(el=>el.addEventListener('animationend',()=>{el.style.animation='none';},{once:true}));
+    pill.classList.remove('bloom'); void pill.offsetWidth; pill.classList.add('bloom');
+    pill.addEventListener('animationend',()=>{pill.classList.remove('bloom');},{once:true});
+    lastWord=-1;
+  }
+  video.addEventListener('timeupdate',()=>{
+    const i=activeIdx(video.currentTime);
+    if(i!==cur){
+      if(cur>=0)rows[cur].classList.remove('on');
+      cur=i; rows[i].classList.add('on');
+      /* scroll ONLY the cue container — scrollIntoView would yank the whole page */
+      list.scrollTop += rows[i].getBoundingClientRect().top - list.getBoundingClientRect().top
+        - list.clientHeight/2 + rows[i].clientHeight/2;
+      kk.classList.add('hide');
+      setTimeout(()=>{if(cur!==i)return; renderCue(i); kk.classList.remove('hide');},180);
+    }
+    /* 🌸 the garden follows the voice — light the word being spoken */
+    const ws=kkText.children; if(!ws.length)return;
+    const c=CUES[cur], p=Math.min(Math.max((video.currentTime-c.t)/(cueEnd(cur)-c.t),0),1);
+    const wi=Math.min(Math.floor(p*ws.length),ws.length-1);
+    if(wi!==lastWord){
+      if(lastWord>=0&&ws[lastWord])ws[lastWord].classList.remove('now');
+      if(ws[wi])ws[wi].classList.add('now');
+      lastWord=wi;
+    }
+  });
+  video.addEventListener('seeked',()=>{cur=-1;lastWord=-1; video.dispatchEvent(new Event('timeupdate'));});
+  /* the host ignores range requests, so mid-stream seeks bounce — fetch the tape
+     whole and blob-swap it in; after that every tap seeks instantly.
+     lazy mode: wait for the first play so we don't eat the visitor's data plan */
+  let swapped=false;
+  const swap=()=>{
+    if(swapped)return; swapped=true;
+    const src=video.currentSrc||video.getAttribute('src');
+    if(!src||src.indexOf('blob:')===0)return;
+    /* cross-origin tapes can't be fetched whole — native progressive is fine there */
+    try{if(new URL(src,location.href).origin!==location.origin)return;}catch(e){return;}
+    (async()=>{
+      try{
+        const r=await fetch(src);
+        if(!r.ok)return;
+        const blob=await r.blob();
+        const url=URL.createObjectURL(blob);
+        const was={t:video.currentTime,playing:!video.paused&&!video.ended};
+        video.addEventListener('loadedmetadata',()=>{
+          video.currentTime=was.t;
+          if(was.playing)video.play().catch(()=>{});
+        },{once:true});
+        video.src=url;
+      }catch(e){/* native progressive playback still works */}
+    })();
+  };
+  if(opts.eager)swap(); else video.addEventListener('play',swap,{once:true});
+}
+gardenTheater({video:'fsVideo',kk:'fsKaraoke',kkText:'fsKaraokeText',list:'fsCueList',cues:(typeof FIRESIDE_CUES!=='undefined')?FIRESIDE_CUES:null,eager:true});
+</script>
 <script src="https://shakaleikaumaka.com/assets/x402-tip.js?v=1.3" defer></script>
 </body>
 </html>
