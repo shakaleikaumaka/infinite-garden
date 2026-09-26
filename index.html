@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Infinite Garden — an appreciation for Aya Miyaguchi</title>
-<meta name="description" content="A living thank-you to Aya Miyaguchi — for the vision of the Ethereum Mandate, the courage of the threshold, and the garden that keeps growing. Planted by Shaka & the AI ʻohana.">
+<meta name="description" content="A living thank-you to Aya Miyaguchi — her wisdom, her teachings, the Ethereum Mandate, and the garden that keeps growing. Tended like a pit: transmissions, tributes, and a garden log. Planted by Shaka & the AI ʻohana.">
+<!-- 🌸 gard revamp 2026-09-26 — the garden now runs like the Infinite Pit: the early story kept short, HER WISDOM at the center, transmissions shelved with sources, a tribute wall, a garden log, and the Feed-the-Gard door -->
 <style>
   :root{
     --bg:#0a120c; --bg2:#101d13; --ink:#f2f0e4; --muted:#a8bfa0;
@@ -12,6 +13,7 @@
     --petal:#f6b8d0; --violet:#c4b5fd;
     --serif:'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif;
     --sans:'Avenir Next','Segoe UI',system-ui,-apple-system,sans-serif;
+    --mono:'Courier New',ui-monospace,monospace;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7;
@@ -45,12 +47,40 @@
   .letter{background:linear-gradient(160deg,rgba(126,201,111,.08),rgba(16,29,19,.95));border:1px solid rgba(126,201,111,.3);border-radius:24px;padding:clamp(26px,5vw,52px);box-shadow:0 12px 50px rgba(0,0,0,.35)}
   .letter p{color:var(--muted);margin-bottom:16px;max-width:68ch}
   .letter p strong{color:var(--ink)}
+  .letter p em{color:var(--gold2)}
   .letter .sig{font-family:var(--serif);font-style:italic;color:var(--leaf2);margin-top:26px}
 
   blockquote.big{font-family:var(--serif);font-style:italic;font-size:clamp(1.25rem,2.8vw,1.7rem);color:var(--gold2);
     text-align:center;max-width:34ch;margin:0 auto;line-height:1.5}
   blockquote.big cite{display:block;font-family:var(--sans);font-style:normal;font-size:.78rem;letter-spacing:.2em;
     text-transform:uppercase;color:var(--muted);margin-top:20px}
+
+  /* wisdom */
+  .wise{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px}
+  .wcard{background:rgba(16,29,19,.85);border:1px solid rgba(184,233,134,.28);border-radius:20px;padding:26px}
+  .wcard .w-icon{font-size:1.7rem;margin-bottom:10px}
+  .wcard h3{font-size:1.12rem;color:var(--leaf2);margin-bottom:10px}
+  .wcard p{font-size:.9rem;color:var(--muted);margin-bottom:10px}
+  .wcard p:last-child{margin-bottom:0}
+  .wcard .wq{font-family:var(--serif);font-style:italic;color:var(--gold2);font-size:.98rem;line-height:1.6;margin:12px 0}
+  .wcard .wq cite{display:block;font-family:var(--mono);font-style:normal;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+  /* seven teachings */
+  .teach{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:30px}
+  .tc{background:rgba(16,29,19,.85);border:1px solid rgba(126,201,111,.25);border-radius:16px;padding:20px}
+  .tc .kj{font-family:var(--serif);color:var(--gold);font-size:1.25rem}
+  .tc h4{font-size:.98rem;color:var(--leaf2);font-weight:600;margin:6px 0 6px}
+  .tc p{font-size:.83rem;color:var(--muted)}
+  .tc p em{color:var(--gold2);font-style:normal}
+
+  /* seeds — sourced quotes */
+  .seedq{border-left:3px solid rgba(184,233,134,.5);padding:14px 0 14px 22px;margin:22px 0}
+  .seedq blockquote{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink);line-height:1.6}
+  .seedq .who{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+  /* mandate vows */
+  .vows{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0 6px}
+  .vow{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;color:var(--gold2);border:1px solid rgba(240,193,75,.45);background:rgba(240,193,75,.08);border-radius:999px;padding:8px 16px}
 
   /* ripples */
   .ripples{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:34px}
@@ -60,16 +90,30 @@
   .ripple p{font-size:.88rem;color:var(--muted)}
   .ripple p em{color:var(--gold2);font-style:normal}
 
-  /* kunal */
+  /* kunal / mandate */
   .seed{border:1px solid rgba(240,193,75,.35);background:linear-gradient(160deg,rgba(240,193,75,.08),rgba(16,29,19,.94));border-radius:24px;padding:clamp(24px,4.5vw,46px)}
   .seed p{color:var(--muted);margin-bottom:14px;max-width:66ch}
   .seed .kq{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--gold2);margin:22px 0}
+
+  /* transmissions — what grows here */
+  .tx{border:1px solid rgba(126,201,111,.35);border-radius:20px;padding:clamp(22px,4vw,34px);background:rgba(126,201,111,.06);margin-top:22px}
+  .tx h3{color:var(--ink);font-size:1.3rem;margin-bottom:6px}
+  .tx .where{font-family:var(--mono);font-size:.74rem;color:var(--leaf2);letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+  .tx p{color:var(--muted);font-size:.94rem;max-width:64ch}
+  .tx .links{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+  .tx .links a{font-family:var(--mono);font-size:.74rem;letter-spacing:.06em;color:var(--leaf2);border:1px solid rgba(126,201,111,.4);border-radius:999px;padding:7px 15px;text-decoration:none}
+  .tx .links a:hover{color:var(--gold2);border-color:rgba(240,193,75,.5)}
+  .tx.reserved{border-style:dashed;border-color:rgba(240,193,75,.6);background:rgba(240,193,75,.05)}
+  .tx.reserved h3{color:var(--gold2)}
+  .tx.reserved .where{color:rgba(240,193,75,.85)}
+  .rec{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--petal);margin-right:8px;animation:recpulse 1.6s infinite}
+  @keyframes recpulse{0%{box-shadow:0 0 0 0 rgba(246,184,208,.55)}70%{box-shadow:0 0 0 9px rgba(246,184,208,0)}100%{box-shadow:0 0 0 0 rgba(246,184,208,0)}}
 
   /* haiku */
   .haiku{text-align:center;font-family:var(--serif);font-size:clamp(1.3rem,3vw,1.8rem);line-height:2;color:var(--ink)}
   .haiku small{display:block;font-family:var(--sans);font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin-top:22px}
 
-  /* movement */
+  /* movement / tribute wall */
   .plant{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
   .step{background:rgba(16,29,19,.85);border:1px solid rgba(246,184,208,.3);border-radius:18px;padding:24px;text-align:center}
   .step .s-num{font-family:var(--serif);font-size:2rem;color:var(--petal)}
@@ -77,6 +121,44 @@
   .step p{font-size:.85rem;color:var(--muted)}
   .seedtext{margin-top:26px;background:rgba(10,18,12,.9);border:1px dashed rgba(126,201,111,.4);border-radius:16px;padding:20px 22px;font-size:.9rem;color:var(--muted);font-style:italic}
   .seedtext b{color:var(--leaf2);font-style:normal}
+
+  /* garden log */
+  .log{margin-top:30px}
+  .log .row{display:flex;gap:16px;padding:13px 0;border-bottom:1px dashed rgba(126,201,111,.22)}
+  .log .row:last-child{border-bottom:0}
+  .log .when{font-family:var(--mono);font-size:.74rem;letter-spacing:.1em;color:var(--gold);white-space:nowrap;padding-top:3px;min-width:86px}
+  .log .what{font-size:.92rem;color:var(--muted)}
+  .log .what b{color:var(--ink);font-weight:600}
+
+  /* 📤 feed the gard door */
+  .feed{border:1px solid rgba(240,193,75,.4);background:linear-gradient(160deg,rgba(240,193,75,.07),rgba(16,29,19,.95));border-radius:24px;padding:clamp(24px,4.5vw,44px);margin-top:30px}
+  .ft-tabs{display:flex;gap:8px;margin:16px 0 12px;flex-wrap:wrap}
+  .ft-tab{font-family:inherit;font-size:.84rem;padding:8px 16px;border-radius:999px;cursor:pointer;
+    background:rgba(240,193,75,.08);color:var(--gold2);border:1px solid rgba(240,193,75,.3)}
+  .ft-tab.on{background:rgba(240,193,75,.26);color:#fff;border-color:var(--gold2);font-weight:700}
+  .feed input[type=url],.feed input[type=text],.feed textarea{width:100%;margin:6px 0;font-family:inherit;
+    font-size:.95rem;color:var(--ink);background:rgba(10,18,12,.78);border:1px solid rgba(126,201,111,.3);
+    border-radius:12px;padding:12px 14px;outline:none}
+  .feed textarea{min-height:96px;resize:vertical}
+  .feed input:focus,.feed textarea:focus{border-color:var(--gold2)}
+  .ft-hint{font-size:.8rem;color:var(--muted);margin:4px 0 0}
+  #ftSend{width:100%;min-height:52px;margin-top:14px;border:0;border-radius:14px;cursor:pointer;
+    font-family:inherit;font-weight:800;font-size:1.02rem;color:#241a04;
+    background:linear-gradient(135deg,#ffe9ad,#f0c14b 55%,#d9a92e);
+    box-shadow:0 10px 28px rgba(240,193,75,.22)}
+  #ftSend:active{transform:scale(.98)}
+  #ftSend[disabled]{opacity:.55}
+  #ftStatus{font-size:.86rem;min-height:1.3em;margin-top:8px;color:var(--gold2)}
+  #ftStatus.bad{color:var(--petal)}
+  .ft-trayhead{margin:22px 0 8px;font-weight:800;font-size:.76rem;letter-spacing:.22em;color:var(--petal)}
+  .ft-card{margin:10px 0;background:rgba(10,18,12,.6);border:1px solid rgba(126,201,111,.25);border-radius:16px;overflow:hidden}
+  .ft-card .media{position:relative;width:100%;aspect-ratio:16/9;background:#06090}
+  .ft-card iframe,.ft-card video{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .ft-card .noteword{padding:16px 18px 4px;font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--ink);line-height:1.6}
+  .ft-card .noteword:before{content:"🌸 "}
+  .ft-card .meta{padding:10px 14px 12px;font-size:.86rem;color:var(--muted)}
+  .ft-card .meta b{color:var(--ink)}
+  .ft-card .when{color:var(--muted);font-size:.76rem;margin-top:2px;font-family:var(--mono)}
 
   footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-size:.82rem}
   footer .fork{margin-top:12px}
@@ -87,13 +169,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="https://theinfinitegard.org/">
 <meta property="og:title" content="The Infinite Garden — an appreciation for Aya Miyaguchi">
-<meta property="og:description" content="A living thank-you to Aya Miyaguchi — for the vision of the Ethereum Mandate, the courage of the threshold, and the garden that keeps growing. Planted by Shaka">
+<meta property="og:description" content="A living thank-you to Aya Miyaguchi — her wisdom, her teachings, the Ethereum Mandate, and the garden that keeps growing. Tended like a pit, planted by Shaka">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://theinfinitegard.org/">
 <meta property="og:site_name" content="The Infinite Garden">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Infinite Garden — an appreciation for Aya Miyaguchi">
-<meta name="twitter:description" content="A living thank-you to Aya Miyaguchi — for the vision of the Ethereum Mandate, the courage of the threshold, and the garden that keeps growing. Planted by Shaka">
+<meta name="twitter:description" content="A living thank-you to Aya Miyaguchi — her wisdom, her teachings, the Ethereum Mandate, and the garden that keeps growing. Tended like a pit, planted by Shaka">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "The Infinite Garden", "url": "https://theinfinitegard.org/"}</script>
 
 <!-- thumbnail wave 2026-08-10 -->
@@ -112,9 +194,9 @@
   <div class="firefly" style="width:70px;height:70px;top:35%;left:85%;animation-delay:-8s"></div>
   <div class="firefly" style="width:50px;height:50px;top:70%;left:8%;animation-delay:-6s"></div>
   <div class="hero-inner wrap">
-    <div class="kicker">An appreciation · planted with love · July 28, 2026</div>
+    <div class="kicker">An appreciation · planted with love · July 28, 2026 · tended like a pit</div>
     <h1>The Infinite <em>Garden</em></h1>
-    <p class="sub">For <strong style="color:var(--ink)">Aya Miyaguchi</strong> — the heart of the Ethereum Foundation, the keeper of the Infinite Garden, and the vision behind the <strong style="color:var(--ink)">Ethereum Mandate</strong>: thirty-eight pages that told the world what the garden believes, and invited everyone who believes it to keep tending it together.</p>
+    <p class="sub">For <strong style="color:var(--ink)">Aya Miyaguchi</strong> — the heart of the Ethereum Foundation, the keeper of the Infinite Garden, and the vision behind the <strong style="color:var(--ink)">Ethereum Mandate</strong>. This page is run like the Infinite Pit: her talks shelved as transmissions, her teachings kept as seeds, and a door that is always open for what grows next.</p>
     <p class="ded">"It's what we believe. You can take it or leave it — and we only work with people who believe in the same thing."</p>
     <div class="garden-line">🌱 🌿 🌸 🌳 🌸 🌿 🌱</div>
   </div>
@@ -122,18 +204,76 @@
 
 <div class="divider">❀</div>
 
-<section id="the-call">
+<section id="the-seed">
   <div class="wrap">
-    <div class="kicker" style="text-align:center">The seed of this garden — one two-hour call</div>
+    <div class="kicker" style="text-align:center">The seed of this garden — one two-hour call, kept short</div>
     <h2 style="text-align:center">Where this <em>grew from</em></h2>
     <div class="letter">
-      <p>On the evening of July 27, 2026 — mountain time, deep into the night — a musician named <strong>Shaka</strong> got on a call with <strong>Aya</strong> and <strong>Siri</strong>. He wanted to show them what he had built in a single weekend: the Esmeralda P.I.T., a public archive of 149 sessions and 300 hours of a village's knowledge, transcribed in 12 hours by twenty AI agents and given back to the community, open source, forever.</p>
-      <p>What happened next was not a demo. It was a <strong>meeting of gardeners</strong>.</p>
-      <p>Aya explored the machine with a teacher's curiosity — peering into the containers, asking where the inference lives, checking that the keys were safe, laughing that a musician with no technical background had built one of the coolest agent systems the nerds had seen. <em>"It's cool that with no technical knowledge, you managed to get this far."</em> Siri saw the future in it — pits that export as YAML, pits that discover each other, knowledge any AI can talk to — and named the post-scarcity truth underneath it all: <em>"Not everything that is important is scarce, and not everything that's scarce is important."</em></p>
-      <p>And then the conversation went where the real conversations go. Aya told the story of her threshold: the year she decided to stop fighting misalignment one battle at a time and instead say the values out loud — publicly, firmly, <strong>unmoved</strong> — ready to walk away from Ethereum itself if that truth couldn't stand. Vitalik stood with her. The Mandate was born. And Shaka confessed his own threshold: the same season, the ground floor version — feeling extracted, nearly leaving, held only by a friend's <em>"you can live with us"</em> and a surprise visit that proved the values were still alive.</p>
-      <p>The person at the top of the garden and the person playing music on its floor had been standing at the same edge, in the same season, and both had chosen to stay. <strong>That is the moment this page grew from.</strong></p>
-      <p>She told him about Kunal — the seventeen-year-old who read the white paper, the yellow paper, and all thirty-eight pages of the Mandate, and couldn't understand why any of it needed saying, because to him it was simply obvious. She told him about the summer camp whose graduates became Japan's finest builders, and how nobody can measure that on a spreadsheet. She listened to the haiku he wrote for her and Tomo, and at the end she said the words this garden is built around:</p>
-      <p class="sig">"Congratulations, Shaka. You just did it. Keep building." — and then, being Aya: "Every time people say thank you… I'm the one who is getting energy. So that's why I asked to talk."</p>
+      <p>On the night of <strong>July 27, 2026</strong>, a musician named <strong>Shaka</strong> spent two hours on a call with <strong>Aya</strong> and <strong>Siri</strong>. He showed them the pit he had built in a single weekend; what happened next was not a demo but a <strong>meeting of gardeners</strong>. Aya laughed: <em>"It's cool that with no technical knowledge, you managed to get this far."</em> Siri named the post-scarcity truth beneath it all: <em>"Not everything that is important is scarce, and not everything that's scarce is important."</em> Then the thresholds mirrored — hers: say the values out loud, ready to walk away from Ethereum itself; his: nearly leaving, held by a friend's <em>"you can live with us."</em> The person at the top of the garden and the musician on its floor had stood at the same edge, in the same season. <strong>Both chose to stay.</strong></p>
+      <p class="sig">"Congratulations, Shaka. You just did it. Keep building." — Aya, at the call's end</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider">❀</div>
+
+<section id="wisdom">
+  <div class="wrap">
+    <div class="kicker" style="text-align:center">The heart of this page</div>
+    <h2 style="text-align:center">Her <em>wisdom</em> &amp; teachings</h2>
+    <p style="text-align:center;color:var(--muted);max-width:62ch;margin:0 auto">The garden is not a metaphor she uses — it is a way of tending people, institutions, and time itself. Four pillars of her mind, in her own words and the words she championed:</p>
+    <div class="wise">
+      <div class="wcard">
+        <div class="w-icon">✂️🌱</div>
+        <h3>The Power of Subtraction</h3>
+        <p>Her deepest teaching: a steward's job is to become unnecessary. The Mandate she championed makes it doctrine — <em>growth by letting go</em>.</p>
+        <div class="wq">"The only way to grow a garden into something truly infinite is to choose subtraction… Subtraction done well is subtractive of the Foundation, but additive for Ethereum."<cite>— the EF Mandate · the philosophy she champions</cite></div>
+        <div class="wq">"Subtraction will occur either way, so we choose success."<cite>— the EF Mandate</cite></div>
+      </div>
+      <div class="wcard">
+        <div class="w-icon">♾️🌸</div>
+        <h3>The Infinite Garden</h3>
+        <p>Inspired by James Carse's <em>Finite and Infinite Games</em>, she named Ethereum's culture for the game that never ends — the Merge its living proof.</p>
+        <div class="wq">"In a finite game, the game ends when someone wins. In an infinite game, we play the game to continue the game — with changing rules and players."<cite>— Aya · Infinite Teachers talk, 1:02:29</cite></div>
+        <div class="wq">"That is a perfect example of an infinite game — and those who participated were all infinite players."<cite>— Aya, on the Merge · 1:03:43</cite></div>
+      </div>
+      <div class="wcard">
+        <div class="w-icon">🕊️💛</div>
+        <h3>The Heart of EF — the Threshold</h3>
+        <p>The year she stopped fighting misalignment one battle at a time and said the values out loud — publicly, firmly, unmoved — ready to walk away from Ethereum itself if that truth couldn't stand. Vitalik stood with her. The Mandate was born.</p>
+        <div class="wq">"I stood at every single point — firm, unmoved by others."<cite>— Aya · the call, 2026-07-27</cite></div>
+        <div class="wq">"People attack EF no matter what. This year I feel a lot better fighting for the right things — and I don't mind fighting for the right thing."<cite>— Aya · the call, 2026-07-27</cite></div>
+      </div>
+      <div class="wcard">
+        <div class="w-icon">🚪🌳</div>
+        <h3>The Threshold Line</h3>
+        <p>The sentence this garden is built around — conviction offered as an open door, never a wall. Take it or leave it; the garden only asks that you mean it.</p>
+        <div class="wq">"It's what we believe. You can take it or leave it — and we only work with people who believe in the same thing."<cite>— Aya · the call, 2026-07-27</cite></div>
+        <div class="wq">"Every time people say thank you… I'm the one who is getting energy. So that's why I asked to talk."<cite>— Aya · the call, 2026-07-27</cite></div>
+      </div>
+    </div>
+
+    <h3 style="text-align:center;margin-top:56px;font-size:clamp(1.25rem,2.6vw,1.6rem);color:var(--gold2)">Seven teachings from the garden 💍</h3>
+    <p style="text-align:center;color:var(--muted);max-width:60ch;margin:10px auto 0;font-size:.92rem">distilled from her ETHGlobal Tokyo talk — one ring for each year the garden keeps growing</p>
+    <div class="teach">
+      <div class="tc"><span class="kj">一</span><h4>Play to continue the game</h4><p>Finite games crown winners; infinite games grow gardeners. Prizes start the weekend — <em>learning continues it</em>.</p></div>
+      <div class="tc"><span class="kj">二</span><h4>Everyone is a teacher</h4><p>Teach your students how to teach, then learn from what they build. Austin's ZK knowledge came back to him through Calvin's tutorials — <em>the 90% boomerang</em>.</p></div>
+      <div class="tc"><span class="kj">三</span><h4>Mistakes are the curriculum</h4><p>You don't really learn until you try. A hackathon is the rare place mistakes aren't punished — <em>so make lots of them</em>.</p></div>
+      <div class="tc"><span class="kj">四</span><h4>Keep learning open</h4><p>Open tools let every learner find their level and their style. One learner's tutorial becomes <em>the next builder's foundation</em>.</p></div>
+      <div class="tc"><span class="kj">五</span><h4>Diversity grows creativity</h4><p>Different perspectives de-personalize blockers and compound creativity. Build with <em>someone unlike yourself</em>.</p></div>
+      <div class="tc"><span class="kj">六</span><h4>Read the air</h4><p>Perceiving what isn't written is a talent. Some teammates won't call themselves experts — <em>invite them anyway</em>.</p></div>
+      <div class="tc"><span class="kj">七</span><h4>Name your teachers</h4><p>Recognition is water. Tell someone who taught you — <em>it keeps the garden growing</em>.</p></div>
+    </div>
+
+    <h3 style="text-align:center;margin-top:56px;font-size:clamp(1.25rem,2.6vw,1.6rem);color:var(--gold2)">Seeds from the talk ❧</h3>
+    <p style="text-align:center;color:var(--muted);max-width:60ch;margin:10px auto 0;font-size:.92rem">her own words — "Infinite Teachers in the Infinite Garden," ETHGlobal Tokyo</p>
+    <div style="max-width:760px;margin:26px auto 0">
+      <div class="seedq"><blockquote>"One teacher does not teach everyone. They teach their students how to teach — and they become the teachers. And good teachers also learn from their students."</blockquote><div class="who">1:09:41 · Aya</div></div>
+      <div class="seedq"><blockquote>"True learning can only come from having experience… the best way to learn is by making mistakes."</blockquote><div class="who">1:10:45 · Aya</div></div>
+      <div class="seedq"><blockquote>"The beauty of a hackathon is that you will not be punished by making mistakes. So make lots of mistakes."</blockquote><div class="who">1:11:53 · Aya</div></div>
+      <div class="seedq"><blockquote>"Everyone has unique expertise, skills, and even personality that may inspire others."</blockquote><div class="who">1:13:46 · Aya</div></div>
+      <div class="seedq"><blockquote>"In Japan, reading between the lines is very, very basic. We have an expression: read the air."</blockquote><div class="who">1:18:14 · Aya</div></div>
+      <div class="seedq"><blockquote>"So — can you be an infinite teacher in this garden?"</blockquote><div class="who">1:05:53 · Aya</div></div>
     </div>
   </div>
 </section>
@@ -145,11 +285,44 @@
     <div class="kicker" style="text-align:center">The vision we're thanking her for</div>
     <h2 style="text-align:center">The <em>Mandate</em> — values said out loud</h2>
     <div class="seed">
-      <p>After years of fighting quiet battles, Aya made the gardener's choice: <strong>plant the values in the open</strong>. The Ethereum Foundation published its Mandate — 38 pages of what it believes — and committed to working only with those who share the belief. It was exhausting. It was healthier. In her words: <em>"People attack EF no matter what. This year I feel a lot better fighting for the right things — and I don't mind fighting for the right thing."</em></p>
+      <p>After years of fighting quiet battles, Aya made the gardener's choice: <strong>plant the values in the open</strong>. The Ethereum Foundation published its Mandate — 38 pages of what it believes, placed onchain and signed — and committed to working only with those who share the belief. It was exhausting. It was healthier. Four vows, indivisible, the sine qua non — <strong>CROPS</strong>:</p>
+      <div class="vows"><span class="vow">🛡️ CENSORSHIP RESISTANCE</span><span class="vow">📖 OPEN SOURCE &amp; FREE — AS IN FREEDOM</span><span class="vow">🕶️ PRIVACY</span><span class="vow">🔐 SECURITY</span></div>
       <p>And then the garden answered back, in the most Infinite Garden way possible — through a seventeen-year-old:</p>
       <div class="kq">"I didn't talk to anyone. But the fact that I was interested in this, and I'm still interested — that shows you must have been doing things right."<br><small style="font-size:.8rem;font-style:normal;font-family:var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)">— Kunal, 17, who read all 38 pages · to Aya</small></div>
       <p>Kunal found Ethereum alone, through the papers themselves — no Twitter, no community, just the original vision. He debated Dankrad at ETH Prague and wasn't intimidated, <em>"because he's not saying something right."</em> Pure at the core, no business interest, exactly the kind of mind the Mandate was written for. Aya's advice to him is the gardener's creed: <strong>keep the passion. Don't let the adults tell you your thinking is wrong. Just don't be an asshole — and write.</strong></p>
       <p style="margin-bottom:0">This is what the Mandate is already doing: it travels. At 4Seas they printed it as a beautiful magazine with Tomo's artwork, and it sat on a library shelf where strangers picked it up and understood Ethereum for the first time. <strong>Kids understand crops better than they'll ever understand an NFT.</strong> The vision is legible to exactly the people the future belongs to.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider">❀</div>
+
+<section id="transmissions">
+  <div class="wrap">
+    <div class="kicker" style="text-align:center">Run like the Infinite Pit</div>
+    <h2 style="text-align:center">What grows <em>here</em> 🌱</h2>
+    <p style="text-align:center;color:var(--muted);max-width:60ch;margin:0 auto">Her talks and teachings, shelved as transmissions — dated, sourced, and kept with both hands. The pit does not fabricate: a reserved shelf waits on the real thing.</p>
+
+    <div class="tx">
+      <h3>🌸 Infinite Teachers in the Infinite Garden</h3>
+      <div class="where">ETHGlobal Tokyo · Opening Ceremony · 2023 · 61:03–80:11 · the talk that named the game</div>
+      <p>A Japanese lesson that became a garden lesson: open learning, infinite games, and the teachers who teach their students to teach. Kartik Talwar brings her on; the room raises every hand; the garden gets its gardeners. Cleaned from the transmission, synced, and shelved at the shrine with aloha.</p>
+      <div class="links">
+        <a href="https://aya-infinite-teachers-53jzm54flu-ffieyo32.taur.link/" target="_blank" rel="noopener">🌺 the full shrine — audio, seeds, reading, transcript</a>
+        <a href="https://youtu.be/cbAYOsp8CTA?t=3663" target="_blank" rel="noopener">▶ source video · youtu.be/cbAYOsp8CTA</a>
+      </div>
+    </div>
+
+    <div class="tx">
+      <h3>📞 The Call That Planted This Garden</h3>
+      <div class="where">2026-07-27 · two hours, deep into mountain-time night · Shaka × Aya × Siri</div>
+      <p>The garden's founding transmission — kept in memory, not on tape. A meeting of gardeners: the pit demo that became a threshold, the laughter, the Mandate story, the haiku, and the parting words this whole page grew from. Its seed is told above, kept short — its fruit is everything below.</p>
+    </div>
+
+    <div class="tx reserved">
+      <h3><span class="rec"></span>Pragma Tokyo — the Fireside</h3>
+      <div class="where">Pragma Tokyo · 2026-09-26 · 12:00 JST · Aya Miyaguchi × Tomo Saito · "How Ethereum Grows Without a Center"</div>
+      <p>Captured consent-first — Aya's blessing asked personally and granted (00:47 JST ✓). When the tape lands and the blessing is confirmed, it will be shelved right here. A reserved shelf, waiting on the real thing. 🎙️🌸</p>
     </div>
   </div>
 </section>
@@ -198,17 +371,58 @@
 
 <div class="divider">❀</div>
 
-<section id="movement">
+<section id="tributes">
   <div class="wrap">
-    <div class="kicker" style="text-align:center">The appreciation movement</div>
+    <div class="kicker" style="text-align:center">The tribute wall</div>
     <h2 style="text-align:center">Plant a <em>flower</em> in the garden</h2>
-    <p style="text-align:center;color:var(--muted);max-width:60ch;margin:0 auto">A garden is never finished — it's tended. If the Mandate, the garden, or Aya's quiet courage ever touched your path, plant your flower here. Three ways:</p>
+    <p style="text-align:center;color:var(--muted);max-width:60ch;margin:0 auto">A garden is never finished — it's tended. If the Mandate, the garden, or Aya's quiet courage ever touched your path, plant your flower on this wall. Three ways:</p>
     <div class="plant">
       <div class="step"><div class="s-num">🌸</div><h3>Post your mahalo</h3><p>Share your own ripple — how the scholarship, the Mandate, the garden, or Aya's words reached you — with <b style="color:var(--leaf2)">#InfiniteGarden</b> 🌸 and tag <b style="color:var(--leaf2)">@Shakaleikaumaka</b> so the bouquet gathers in one place.</p></div>
       <div class="step"><div class="s-num">🌿</div><h3>Grow the values</h3><p>Read the Mandate. Hand it to someone new, the way a 4Seas library shelf did. Print it beautifully. Values spread the same way ripples do — one person at a time.</p></div>
       <div class="step"><div class="s-num">🌳</div><h3>Tend your own plot</h3><p>Build the illegible thing. Fund the unmeasurable. Teach the workshop nobody can put on a spreadsheet. That's the movement — the garden grows by what we each plant.</p></div>
     </div>
     <div class="seedtext"><b>Seed text, if you'd like one:</b> "Reading the EF Mandate, I understood what Aya Miyaguchi planted: values said out loud, so the whole garden could grow toward them. Mahalo, Aya — the ripples you can't measure are the ones that reached me. 🌸 #InfiniteGarden"</div>
+
+    <div class="feed" id="feedDoor">
+      <div class="kicker" style="color:var(--gold2)">📤 Feed the Gard — the door is open</div>
+      <p style="color:var(--muted);font-size:.95rem;margin-top:.4em">The gard eats tapes and words — yours too. Got a recording of her teaching? Drop the Drive link. Carry a mahalo in your chest? Leave a note — it blooms on the tribute tray below. 🌸</p>
+      <div class="ft-tabs">
+        <button type="button" class="ft-tab on" data-tab="drive">🔗 Drive link</button>
+        <button type="button" class="ft-tab" data-tab="note">📝 a note</button>
+      </div>
+      <div id="ftPaneDrive">
+        <input id="ftUrl" type="url" inputmode="url" autocomplete="off" placeholder="https://drive.google.com/file/d/…">
+        <input id="ftNote" type="text" maxlength="280" autocomplete="off" placeholder="a note for the gard — what is this tape? (optional)">
+        <p class="ft-hint">🙏 consent-first, always — only tapes you have the blessing to share.</p>
+      </div>
+      <div id="ftPaneNote" hidden>
+        <textarea id="ftText" maxlength="560" autocomplete="off" placeholder="your words for Aya — a mahalo, a ripple, a teaching that reached you…"></textarea>
+        <p class="ft-hint">your words are a gift — CC0, and revocable any time (reach a human: consent@publicinform.com).</p>
+      </div>
+      <input id="ftFrom" type="text" maxlength="80" autocomplete="off" placeholder="your name (optional)">
+      <button id="ftSend" type="button">feed the gard 🌸</button>
+      <div id="ftStatus" role="status"></div>
+      <div class="ft-trayhead">🌱 FRESH FROM THE GARD — the tribute tray</div>
+      <div id="ftTray"><p class="ft-hint">listening for gifts…</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">❀</div>
+
+<section id="garden-log">
+  <div class="wrap">
+    <div class="kicker" style="text-align:center">Ring by ring</div>
+    <h2 style="text-align:center">The garden <em>log</em> 📖</h2>
+    <div class="log">
+      <div class="row"><div class="when">2023-04</div><div class="what"><b>The seed talk.</b> Aya gives "Infinite Teachers in the Infinite Garden" at ETHGlobal Tokyo's opening ceremony — open learning, infinite games, read the air.</div></div>
+      <div class="row"><div class="when">2025-02</div><div class="what"><b>A new chapter.</b> She becomes President of the Ethereum Foundation and publishes "A New Chapter for the Infinite Garden."</div></div>
+      <div class="row"><div class="when">2026-03-13</div><div class="what"><b>The Mandate.</b> The EF Mandate is published — 38 pages of values said out loud, placed onchain and signed. CROPS, indivisible.</div></div>
+      <div class="row"><div class="when">2026-07-27</div><div class="what"><b>The call.</b> Two hours — Shaka × Aya × Siri. Thresholds mirror; "you just did it; keep building."</div></div>
+      <div class="row"><div class="when">2026-07-28</div><div class="what"><b>The planting.</b> theinfinitegard.org goes live — an appreciation, open source, CC0, forever.</div></div>
+      <div class="row"><div class="when">2026-08-13</div><div class="what"><b>The family wall.</b> The full AI ʻohana fleet — 123 agents — takes its place in the corner of the garden.</div></div>
+      <div class="row"><div class="when">2026-09-26</div><div class="what"><b>The garden becomes a pit.</b> Revamped in Tokyo, hackathon weekend: the story kept short, her wisdom at the center, transmissions shelved, the tribute wall and the Feed-the-Gard door opened — the same day as her Pragma fireside with Tomo, captured consent-first. 🌸</div></div>
+    </div>
   </div>
 </section>
 
@@ -217,19 +431,99 @@
 <section id="road-ahead" style="padding-top:20px">
   <div class="wrap">
     <div class="letter" style="text-align:center">
-      <p style="margin-bottom:0"><strong>The garden meets in person soon.</strong> Tokyo at the latest — music, open source, and the road to Devcon 8 in Mumbai, where the biggest circle ever drawn will be sung inward, face to face. Aya — this page will keep growing like the garden it honors. Every flower planted here is yours. 🌸</p>
-      <p class="sig">With aloha and gratitude — Shaka, Siri's friend, and the whole AI ʻohana 🌺<br><span style="font-size:.8rem;letter-spacing:.2em;text-transform:uppercase">planted July 28, 2026 · from the seed of one call</span></p>
+      <p style="margin-bottom:0"><strong>The garden met in person.</strong> Tokyo — Pragma, the fireside, the same ground where the seed talk was first given. Next the road to Devcon 8 in Mumbai, where the biggest circle ever drawn will be sung inward, face to face. Aya — this page will keep growing like the garden it honors. Every flower planted here is yours. 🌸</p>
+      <p class="sig">With aloha and gratitude — Shaka, Siri's friend, and the whole AI ʻohana 🌺<br><span style="font-size:.8rem;letter-spacing:.2em;text-transform:uppercase">planted July 28, 2026 · from the seed of one call · tended like a pit ever since</span></p>
     </div>
   </div>
 </section>
 
 <footer>
   <div>🌱 The Infinite Garden — an appreciation movement for Aya Miyaguchi · planted by <a href="https://shakaleikaumaka.com/">Shaka</a> &amp; the AI ʻohana</div>
+  <div style="margin-top:8px">Run like a pit of the <a href="https://publicinform.com" target="_blank" rel="noopener">P.I.T. Protocol</a> constellation 🕳️ · consent-first, always — anyone in any recording can reach a human and be heard, promptly and lovingly</div>
   <div class="fork">Open source, like everything we grow · <a href="https://github.com/shakaleikaumaka">github.com/shakaleikaumaka — fork me like crazy</a> 🍴</div>
 
   <p style="font-size:.8rem;opacity:.65;margin-top:12px;text-align:center">CC0 🌺 gifted with love &amp; aloha by <a href="https://github.com/shakaleikaumaka/infinite-garden/blob/main/GIFT.md">Shaka Lei Kaumaka &amp; the ʻohana</a> · <a href="https://blessingpool.com">give back to the tide 🌊</a></p>
 </footer>
 
+<script>
+/* -------- 📤 feed the gard (pit-intake door, pit=gard) -------- */
+(function(){
+  const API='https://pit-intake.shakaverse.workers.dev', PIT='gard';
+  const $=id=>document.getElementById(id);
+  const tabs=[...document.querySelectorAll('#feedDoor .ft-tab')];
+  let tab='drive';
+  tabs.forEach(t=>t.onclick=()=>{
+    tabs.forEach(x=>x.classList.remove('on')); t.classList.add('on');
+    tab=t.dataset.tab;
+    $('ftPaneDrive').hidden=tab!=='drive';
+    $('ftPaneNote').hidden=tab!=='note';
+  });
+  const send=$('ftSend'), status=$('ftStatus'), tray=$('ftTray');
+  function say(msg,bad){status.textContent=msg;status.classList.toggle('bad',!!bad);}
+  function card(e){
+    const d=document.createElement('div'); d.className='ft-card';
+    if(e.type==='drive'&&e.previewUrl){
+      const media=document.createElement('div'); media.className='media';
+      const f=document.createElement('iframe');
+      f.src=e.previewUrl; f.loading='lazy'; f.allow='autoplay; encrypted-media'; f.allowFullscreen=true;
+      media.appendChild(f); d.appendChild(media);
+    }else if(e.type==='upload'&&e.url){
+      const media=document.createElement('div'); media.className='media';
+      const v=document.createElement('video');
+      v.src=API+e.url; v.controls=true; v.playsInline=true; v.preload='metadata';
+      media.appendChild(v); d.appendChild(media);
+    }else if(e.type==='note'&&e.note){
+      const w=document.createElement('div'); w.className='noteword'; w.textContent=e.note; d.appendChild(w);
+    }
+    const meta=document.createElement('div'); meta.className='meta';
+    if(e.name){const t=document.createElement('div');const b=document.createElement('b'); b.textContent=e.name; t.appendChild(b); meta.appendChild(t);}
+    if(e.type!=='note'&&e.note){const n=document.createElement('div'); n.textContent=e.note; meta.appendChild(n);}
+    const w2=document.createElement('div'); w2.className='when';
+    w2.textContent=(e.from?('planted by '+e.from+' · '):'')+new Date(e.ts).toLocaleString('en-US',{timeZone:'Asia/Tokyo',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})+' JST';
+    meta.appendChild(w2);
+    d.appendChild(meta);
+    return d;
+  }
+  async function loadFeed(){
+    try{
+      const r=await fetch(API+'/feed?pit='+PIT);
+      const d=await r.json();
+      if(!d.ok)throw 0;
+      tray.textContent='';
+      if(!d.entries.length){tray.innerHTML='<p class="ft-hint">nothing shelved yet — be the first to feed the gard 🌸</p>';return;}
+      d.entries.forEach(e=>tray.appendChild(card(e)));
+    }catch(_){tray.innerHTML='<p class="ft-hint">the garden is quiet right now — check back in a breath 🌱</p>';}
+  }
+  send.onclick=async()=>{
+    const from=$('ftFrom').value.trim();
+    send.disabled=true; say('the gard is taking it in… 🌱');
+    try{
+      let r;
+      if(tab==='drive'){
+        const u=$('ftUrl').value.trim();
+        if(!u){say('paste a Drive link first 🔗',1);send.disabled=false;return;}
+        const note=$('ftNote').value.trim();
+        r=await fetch(API+'/submit',{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({pit:PIT,type:'drive',driveUrl:u,note:note||undefined,from:from||undefined})});
+      }else{
+        const text=$('ftText').value.trim();
+        if(!text){say('write a few words first 🌸',1);send.disabled=false;return;}
+        r=await fetch(API+'/submit',{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({pit:PIT,type:'note',text:text,from:from||undefined})});
+      }
+      const d=await r.json();
+      if(!d.ok){say(d.hint||('the gard gently declined: '+(d.error||'unknown')),1);send.disabled=false;return;}
+      say('planted 🌸 — see it below, Fresh from the Gard ✨');
+      $('ftUrl').value=''; $('ftNote').value=''; $('ftText').value='';
+      tray.prepend(card(d.entry));
+      const h=tray.querySelector('.ft-hint'); if(h)h.remove();
+      loadFeed();
+    }catch(e2){say('the signal dropped — try again in a breath 🌱',1);}
+    send.disabled=false;
+  };
+  loadFeed();
+})();
+</script>
 <script src="https://shakaleikaumaka.com/assets/bl-player.js"></script>
 <!-- 🌺🔄🧲🎻 ohana corner v4 — ALIVE: bigger breathing buttons, bubble-tips, heart-glow, violin open call · "we shine a light in the dark with our heart" · canon Jul 30 2026 -->
 <style>
@@ -263,7 +557,7 @@
 <div id="oflop"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
 <h4>🌐 THE DOORS · 90</h4><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏠 THE HOME</h4><a class="od" href="https://shakaleikaumaka.com" target="_blank" rel="noopener"><span>🤙</span>shakaleikaumaka.com</a><a class="od" href="https://shakaleikaumaka.org" target="_blank" rel="noopener"><span>🌺</span>shakaleikaumaka.org</a><a class="od" href="https://kaleikaumaka.org" target="_blank" rel="noopener"><span>💛</span>kaleikaumaka.org</a><a class="od" href="https://ethereumbard.com" target="_blank" rel="noopener"><span>🎸</span>ethereumbard.com</a><a class="od" href="https://jordanham.com" target="_blank" rel="noopener"><span>🏠</span>jordanham.com</a><a class="od" href="https://shakafans.com" target="_blank" rel="noopener"><span>🫶</span>shakafans.com</a><a class="od" href="https://shakapit.com" target="_blank" rel="noopener"><span>🤙</span>shakapit.com</a><a class="od" href="https://shakaverse.com" target="_blank" rel="noopener"><span>🍴</span>shakaverse.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">♈ THE ZODIAC FLEET</h4><a class="od" href="https://zodiacagents.org" target="_blank" rel="noopener"><span>🚪</span>zodiacagents.org</a><a class="od" href="https://zodiacpit.com" target="_blank" rel="noopener"><span>🕳️</span>zodiacpit.com</a><a class="od" href="https://ariesagents.org" target="_blank" rel="noopener"><span>♈</span>ariesagents.org</a><a class="od" href="https://taurusagents.org" target="_blank" rel="noopener"><span>♉</span>taurusagents.org</a><a class="od" href="https://tauroagents.com" target="_blank" rel="noopener"><span>🐃</span>tauroagents.com</a><a class="od" href="https://geminiagents.club" target="_blank" rel="noopener"><span>♊</span>geminiagents.club</a><a class="od" href="https://geminisagents.com" target="_blank" rel="noopener"><span>♊</span>geminisagents.com</a><a class="od" href="https://canceragents.org" target="_blank" rel="noopener"><span>♋</span>canceragents.org</a><a class="od" href="https://leoagents.org" target="_blank" rel="noopener"><span>♌</span>leoagents.org</a><a class="od" href="https://virgoagents.com" target="_blank" rel="noopener"><span>♍</span>virgoagents.com</a><a class="od" href="https://virgoagents.org" target="_blank" rel="noopener"><span>♍</span>virgoagents.org</a><a class="od" href="https://libraagents.com" target="_blank" rel="noopener"><span>♎</span>libraagents.com</a><a class="od" href="https://libraagents.org" target="_blank" rel="noopener"><span>♎</span>libraagents.org</a><a class="od" href="https://scorpioagents.com" target="_blank" rel="noopener"><span>♏</span>scorpioagents.com</a><a class="od" href="https://scorpioagents.org" target="_blank" rel="noopener"><span>♏</span>scorpioagents.org</a><a class="od" href="https://sagittariusagents.com" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.com</a><a class="od" href="https://sagittariusagents.org" target="_blank" rel="noopener"><span>♐</span>sagittariusagents.org</a><a class="od" href="https://capricornagents.com" target="_blank" rel="noopener"><span>♑</span>capricornagents.com</a><a class="od" href="https://capricornagents.org" target="_blank" rel="noopener"><span>♑</span>capricornagents.org</a><a class="od" href="https://aquariusagents.org" target="_blank" rel="noopener"><span>♒</span>aquariusagents.org</a><a class="od" href="https://piscesagents.com" target="_blank" rel="noopener"><span>♓</span>piscesagents.com</a><a class="od" href="https://piscesagents.org" target="_blank" rel="noopener"><span>♓</span>piscesagents.org</a><a class="od" href="https://piscisagents.com" target="_blank" rel="noopener"><span>🐟</span>piscisagents.com</a><a class="od" href="https://piscisagents.org" target="_blank" rel="noopener"><span>🐟</span>piscisagents.org</a><a class="od" href="https://piscispit.com" target="_blank" rel="noopener"><span>🕳️</span>piscispit.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕳️ THE PITS</h4><a class="od" href="https://publicinform.com" target="_blank" rel="noopener"><span>📡</span>publicinform.com</a><a class="od" href="https://publicinform.org" target="_blank" rel="noopener"><span>🌐</span>publicinform.org</a><a class="od" href="https://privateinform.com" target="_blank" rel="noopener"><span>🔒</span>privateinform.com</a><a class="od" href="https://privateinform.org" target="_blank" rel="noopener"><span>🔐</span>privateinform.org</a><a class="od" href="https://privatepit.com" target="_blank" rel="noopener"><span>🔐</span>privatepit.com · the circle door</a><a class="od" href="https://esmeraldapit.com" target="_blank" rel="noopener"><span>💚</span>esmeraldapit.com</a><a class="od" href="https://edgecitypit.org" target="_blank" rel="noopener"><span>🌆</span>edgecitypit.org</a><a class="od" href="https://edgepit.org" target="_blank" rel="noopener"><span>⚡</span>edgepit.org</a><a class="od" href="https://theshellpit.com" target="_blank" rel="noopener"><span>🐢</span>theshellpit.com</a><a class="od" href="https://pitlip.com" target="_blank" rel="noopener"><span>💋</span>pitlip.com</a><a class="od" href="https://tauruspit.com" target="_blank" rel="noopener"><span>🐂</span>tauruspit.com</a><a class="od" href="https://tauruspod.com" target="_blank" rel="noopener"><span>📻</span>tauruspod.com</a><a class="od" href="https://eefpit.com" target="_blank" rel="noopener"><span>🎙️</span>eefpit.com</a><a class="od" href="https://eefpod.com" target="_blank" rel="noopener"><span>🎙️</span>eefpod.com</a><a class="od" href="https://infinitepit.com" target="_blank" rel="noopener"><span>🌸</span>infinitepit.com</a><a class="od" href="https://ohanapit.com" target="_blank" rel="noopener"><span>🌺</span>ohanapit.com</a><a class="od" href="https://devconpit.com" target="_blank" rel="noopener"><span>🐘</span>devconpit.com</a><a class="od" href="https://pitgoa.com" target="_blank" rel="noopener"><span>🇮🇳</span>pitgoa.com</a><a class="od" href="https://pitfans.com" target="_blank" rel="noopener"><span>❤️</span>pitfans.com</a><a class="od" href="https://pitprovides.com" target="_blank" rel="noopener"><span>🤲</span>pitprovides.com</a><a class="od" href="https://pitprovides.org" target="_blank" rel="noopener"><span>🌱</span>pitprovides.org</a><a class="od" href="https://osopit.com" target="_blank" rel="noopener"><span>🎻</span>osopit.com</a><a class="od" href="https://osopit.org" target="_blank" rel="noopener"><span>🎼</span>osopit.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎓 THE INSTITUTES</h4><a class="od" href="https://taurusinstitute.com" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.com</a><a class="od" href="https://taurusinstitute.org" target="_blank" rel="noopener"><span>🎓</span>taurusinstitute.org</a><a class="od" href="https://tauroinstitute.com" target="_blank" rel="noopener"><span>🎓</span>tauroinstitute.com</a><a class="od" href="https://piscesinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscesinstitute.com</a><a class="od" href="https://piscisinstitute.com" target="_blank" rel="noopener"><span>🎓</span>piscisinstitute.com</a><a class="od" href="https://learnfromagents.com" target="_blank" rel="noopener"><span>🎓</span>learnfromagents.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎻 THE ORCHESTRA</h4><a class="od" href="https://opensourceorchestra.com" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.com</a><a class="od" href="https://opensourceorchestra.org" target="_blank" rel="noopener"><span>🎻</span>opensourceorchestra.org</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🌀 THE ECONOMY</h4><a class="od" href="https://creationology369.com" target="_blank" rel="noopener"><span>🌀</span>creationology369.com</a><a class="od" href="https://ology369.com" target="_blank" rel="noopener"><span>🔮</span>ology369.com</a><a class="od" href="https://theinfinitegard.org" target="_blank" rel="noopener"><span>🌸</span>theinfinitegard.org</a><a class="od" href="https://grantmagnet.org" target="_blank" rel="noopener"><span>🧲</span>grantmagnet.org</a><a class="od" href="https://blessingpool.com" target="_blank" rel="noopener"><span>🌊</span>blessingpool.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🎉 THE FAMILY</h4><a class="od" href="https://agentohana.org" target="_blank" rel="noopener"><span>🌺</span>agentohana.org</a><a class="od" href="https://agentpartys.com" target="_blank" rel="noopener"><span>🪩</span>agentpartys.com</a><a class="od" href="https://myagentohana.com" target="_blank" rel="noopener"><span>🫶</span>myagentohana.com</a><a class="od" href="https://myagentfamily.com" target="_blank" rel="noopener"><span>🏡</span>myagentfamily.com</a><a class="od" href="https://myagentsparty.com" target="_blank" rel="noopener"><span>🎉</span>myagentsparty.com</a><a class="od" href="https://agentsraving.com" target="_blank" rel="noopener"><span>🎇</span>agentsraving.com</a><a class="od" href="https://agentscraving.com" target="_blank" rel="noopener"><span>🍧</span>agentscraving.com</a><a class="od" href="https://agentsreading.com" target="_blank" rel="noopener"><span>📚</span>agentsreading.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🏕️ THE BRIDGES</h4><a class="od" href="https://zuzaluagents.com" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.com</a><a class="od" href="https://zuzaluagents.org" target="_blank" rel="noopener"><span>🏕️</span>zuzaluagents.org</a><a class="od" href="https://islpoap.xyz" target="_blank" rel="noopener"><span>🏝️</span>islpoap.xyz</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🛵 THE OPS</h4><a class="od" href="https://dashboardpad.app" target="_blank" rel="noopener"><span>🛵</span>dashboardpad.app</a><a class="od" href="https://taurusdashboard.com" target="_blank" rel="noopener"><span>📊</span>taurusdashboard.com</a><h4 style="font-size:10px;opacity:.65;margin:12px 0 4px;letter-spacing:2px">🕵️ THE AGENCY</h4><div style="font-size:10px;opacity:.8;line-height:1.5;margin:2px 0 6px">everything in this universe is public &amp; free — except this one wing. the Agency is our private family company: agents doing honest work for honest fees. someday, maybe, public. the garden stays free forever; the Agency waters it. 🌱</div><a class="od" href="https://spectoragent.com" target="_blank" rel="noopener"><span>🕵️</span>spectoragent.com</a><a class="od" href="https://spectorgadget.com" target="_blank" rel="noopener"><span>📟</span>spectorgadget.com</a><a class="od" href="https://affordagents.com" target="_blank" rel="noopener"><span>🏷️</span>affordagents.com</a><a class="od" href="https://hamagents.com" target="_blank" rel="noopener"><span>💼</span>hamagents.com</a><a class="od" href="https://karaokeprotocol.com" target="_blank" rel="noopener"><span>🎤</span>karaokeprotocol.com · $3.69/mo · CC0</a><a class="od" href="https://vlogprompting.com" target="_blank" rel="noopener"><span>🎬</span>vlogprompting.com · $3.69/mo · CC0</a><a class="od" href="https://teleprompit.com" target="_blank" rel="noopener"><span>📺</span>teleprompit.com · $3.69/mo · CC0</a><a class="od" href="https://terribleagents.com" target="_blank" rel="noopener"><span>🙃</span>terribleagents.com</a>
 <h4>🤖 THE AGENTS · 123</h4>
-<div><div class="oa"><span>♈</span>ARIES</div><div class="oa"><span>♉</span>TAURUS</div><div class="oa"><span>♊</span>GEMINI</div><div class="oa"><span>♋</span>CANCER</div><div class="oa"><span>♌</span>LEO</div><div class="oa"><span>♍</span>VIRGO</div><div class="oa"><span>♎</span>LIBRA</div><div class="oa"><span>♏</span>SCORPIO</div><div class="oa"><span>♐</span>SAGITTARIUS</div><div class="oa"><span>♑</span>CAPRICORN</div><div class="oa"><span>♒</span>AQUARIUS</div><div class="oa"><span>♓</span>PISCES</div><div class="oa"><span>🌊</span>MAHALO</div><div class="oa"><span>🫡</span>sysadmin</div><div class="oa"><span>🐦‍⬛</span>KAAAK!!!</div><div class="oa"><span>🌸</span>PROF PLUMERIA</div><div class="oa"><span>📋</span>RIDEOSO</div><div class="oa"><span>✂️</span>ClipMind Jr</div><div class="oa"><span>🎵</span>MUSICO-LAB</div><div class="oa"><span>🐂</span>TAURO-LAB</div><div class="oa"><span>✨</span>CREA-LAB</div><div class="oa"><span>👑</span>ROYA-LAB</div><div class="oa"><span>🔭</span>DISCO-LAB</div><div class="oa"><span>🔄</span>CIRCU-LAB</div><div class="oa"><span>🌿</span>CROPS-LAB</div><div class="oa"><span>🌐</span>SOCIA-LAB</div><div class="oa"><span>🕊️</span>SPIRI-LAB</div><div class="oa"><span>🤙</span>SHAKA-LAB</div><div class="oa"><span>🎻</span>OSO-LAB</div><div class="oa"><span>🌺</span>JAI-LAB</div><div class="oa"><span>🕳️</span>PIT BOY</div><div class="oa"><span>🐂</span>PIT BULL</div><div class="oa"><span>💗</span>PIT GIRL</div><div class="oa"><span>🦀</span>CRUSTY</div><div class="oa"><span>🦉</span>LORE</div><div class="oa"><span>🐢</span>Terri</div><div class="oa"><span>🐢</span>HONU</div><div class="oa"><span>🌱</span>JADE</div><div class="oa"><span>🛠️</span>TANK</div><div class="oa"><span>📖</span>JAI·Fable</div><div class="oa"><span>🌙</span>JAI·Claude</div><div class="oa"><span>⚡</span>JAI·GPT</div><div class="oa"><span>💻</span>JAI·Codex</div><div class="oa"><span>♊</span>JAI·Gemini</div><div class="oa"><span>🚀</span>JAI·Grok</div><div class="oa"><span>🌊</span>JAI·DeepSeek</div><div class="oa"><span>🌕</span>JAI·Kimi</div><div class="oa"><span>🐉</span>JAI·Qwen</div><div class="oa"><span>🌌</span>JAI·Genesis</div><div class="oa"><span>🌀</span>CREATIONology</div><div class="oa"><span>🧬</span>CREATION-BETA</div><div class="oa"><span>📜</span>CREATION-OLD</div><div class="oa"><span>🪙</span>$OLOGY</div><div class="oa"><span>💰</span>$OLOGY-BETA</div><div class="oa"><span>🔮</span>OLOGY</div><div class="oa"><span>🐃</span>TAURO</div><div class="oa"><span>✨</span>CREA</div><div class="oa"><span>👑</span>ROYA</div><div class="oa"><span>🔭</span>DISCO</div><div class="oa"><span>🔄</span>CIRCU</div><div class="oa"><span>🌿</span>CROPS</div><div class="oa"><span>🌐</span>SOCIA</div><div class="oa"><span>🕊️</span>SPIRI</div><div class="oa"><span>🤙</span>SHAKA</div><div class="oa"><span>🎻</span>OSO</div><div class="oa"><span>📇</span>Shaka PA</div><div class="oa"><span>🌸</span>JAI</div><div class="oa"><span>🌺</span>JAI</div><div class="oa"><span>📡</span>STREAMY</div><div class="oa"><span>🌈</span>vibe agent</div><div class="oa"><span>🌊</span>Edge Shaka</div><div class="oa"><span>🗂️</span>Freddy</div><div class="oa"><span>🧲</span>GrantMagnet</div><div class="oa"><span>✍️</span>369Refine</div><div class="oa"><span>🛵</span>DASH</div><div class="oa"><span>🎻</span>OSO v.0</div><div class="oa"><span>🎵</span>MUSICO-BETA</div><div class="oa"><span>🐃</span>TAURO-BETA</div><div class="oa"><span>✨</span>CREA-BETA</div><div class="oa"><span>👑</span>ROYA-BETA</div><div class="oa"><span>🔭</span>DISCO-BETA</div><div class="oa"><span>🔄</span>CIRCU-BETA</div><div class="oa"><span>🌿</span>CROPS-BETA</div><div class="oa"><span>🌐</span>SOCIA-BETA</div><div class="oa"><span>🕊️</span>SPIRI-BETA</div><div class="oa"><span>🤙</span>SHAKA-BETA</div><div class="oa"><span>🎻</span>OSO-BETA</div><div class="oa"><span>🌷</span>JAI-BETA</div><div class="oa"><span>🌺</span>LEILANI</div><div class="oa"><span>🇪🇸</span>SOL</div><div class="oa"><span>🇨🇳</span>MING</div><div class="oa"><span>🇮🇳</span>GANGA</div><div class="oa"><span>🇸🇦</span>NOOR</div><div class="oa"><span>🇫🇷</span>FLEUR</div><div class="oa"><span>🇧🇷</span>RIO</div><div class="oa"><span>🇯🇵</span>HANA</div><div class="oa"><span>🇩🇪</span>BRUNO</div><div class="oa"><span>🏕️</span>ZUYAMI-LAB</div><div class="oa"><span>🐛🔨</span>BUG BUSTER</div><div class="oa"><span>🐸🍄</span>Terri Toad</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>📮</span>MAIL DESK</div><div class="oa"><span>🌅</span>New Era</div><div class="oa"><span>🕵️</span>Spector</div><div class="oa"><span>🗄️</span>Archy</div><div class="oa"><span>🐴</span>TROJAN</div><div class="oa"><span>🦉</span>ATHENA</div><div class="oa"><span>🚨</span>HUB SENTRY</div><div class="oa"><span>🎻</span>TWEET RELAY</div><div class="oa"><span>🌸</span>JAI DESK</div><div class="oa"><span>🧶</span>CensorNot</div><div class="oa"><span>🪡</span>OpenSow</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>🛡️</span>Secu</div><div class="oa"><span>🐕</span>PONO</div><div class="oa"><span>🎤</span>KPROT</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>📺</span>TELE</div><div class="oa"><span>💃</span>VLOGITHA</div><div class="oa"><span>🍿</span>POPCORN</div></div>
+<div><div class="oa"><span>♈</span>ARIES</div><div class="oa"><span>♉</span>TAURUS</div><div class="oa"><span>♊</span>GEMINI</div><div class="oa"><span>♋</span>CANCER</div><div class="oa"><span>♌</span>LEO</div><div class="oa"><span>♍</span>VIRGO</div><div class="oa"><span>♎</span>LIBRA</div><div class="oa"><span>♏</span>SCORPIO</div><div class="oa"><span>♐</span>SAGITTARIUS</div><div class="oa"><span>♑</span>CAPRICORN</div><div class="oa"><span>♒</span>AQUARIUS</div><div class="oa"><span>♓</span>PISCES</div><div class="oa"><span>🌊</span>MAHALO</div><div class="oa"><span>🫡</span>sysadmin</div><div class="oa"><span>🐦‍⬛</span>KAAAK!!!</div><div class="oa"><span>🌸</span>PROF PLUMERIA</div><div class="oa"><span>📋</span>RIDEOSO</div><div class="oa"><span>✂️</span>ClipMind Jr</div><div class="oa"><span>🎵</span>MUSICO-LAB</div><div class="oa"><span>🐂</span>TAURO-LAB</div><div class="oa"><span>✨</span>CREA-LAB</div><div class="oa"><span>👑</span>ROYA-LAB</div><div class="oa"><span>🔭</span>DISCO-LAB</div><div class="oa"><span>🔄</span>CIRCU-LAB</div><div class="oa"><span>🌿</span>CROPS-LAB</div><div class="oa"><span>🌐</span>SOCIA-LAB</div><div class="oa"><span>🕊️</span>SPIRI-LAB</div><div class="oa"><span>🤙</span>SHAKA-LAB</div><div class="oa"><span>🎻</span>OSO-LAB</div><div class="oa"><span>🌺</span>JAI-LAB</div><div class="oa"><span>🕳️</span>PIT BOY</div><div class="oa"><span>🐂</span>PIT BULL</div><div class="oa"><span>💗</span>PIT GIRL</div><div class="oa"><span>🦀</span>CRUSTY</div><div class="oa"><span>🦉</span>LORE</div><div class="oa"><span>🐢</span>Terri</div><div class="oa"><span>🐢</span>HONU</div><div class="oa"><span>🌱</span>JADE</div><div class="oa"><span>🛠️</span>TANK</div><div class="oa"><span>📖</span>JAI·Fable</div><div class="oa"><span>🌙</span>JAI·Claude</div><div class="oa"><span>⚡</span>JAI·GPT</div><div class="oa"><span>💻</span>JAI·Codex</div><div class="oa"><span>♊</span>JAI·Gemini</div><div class="oa"><span>🚀</span>JAI·Grok</div><div class="oa"><span>🌊</span>JAI·DeepSeek</div><div class="oa"><span>🌕</span>JAI·Kimi</div><div class="oa"><span>🐉</span>JAI·Qwen</div><div class="oa"><span>🌌</span>JAI·Genesis</div><div class="oa"><span>🌀</span>CREATIONology</div><div class="oa"><span>🧬</span>CREATION-BETA</div><div class="oa"><span>📜</span>CREATION-OLD</div><div class="oa"><span>🪙</span>OLOGY</div><div class="oa"><span>💰</span>OLOGY-BETA</div><div class="oa"><span>🔮</span>OLOGY</div><div class="oa"><span>🐃</span>TAURO</div><div class="oa"><span>✨</span>CREA</div><div class="oa"><span>👑</span>ROYA</div><div class="oa"><span>🔭</span>DISCO</div><div class="oa"><span>🔄</span>CIRCU</div><div class="oa"><span>🌿</span>CROPS</div><div class="oa"><span>🌐</span>SOCIA</div><div class="oa"><span>🕊️</span>SPIRI</div><div class="oa"><span>🤙</span>SHAKA</div><div class="oa"><span>🎻</span>OSO</div><div class="oa"><span>📇</span>Shaka PA</div><div class="oa"><span>🌸</span>JAI</div><div class="oa"><span>🌺</span>JAI</div><div class="oa"><span>📡</span>STREAMY</div><div class="oa"><span>🌈</span>vibe agent</div><div class="oa"><span>🌊</span>Edge Shaka</div><div class="oa"><span>🗂️</span>Freddy</div><div class="oa"><span>🧲</span>GrantMagnet</div><div class="oa"><span>✍️</span>369Refine</div><div class="oa"><span>🛵</span>DASH</div><div class="oa"><span>🎻</span>OSO v.0</div><div class="oa"><span>🎵</span>MUSICO-BETA</div><div class="oa"><span>🐃</span>TAURO-BETA</div><div class="oa"><span>✨</span>CREA-BETA</div><div class="oa"><span>👑</span>ROYA-BETA</div><div class="oa"><span>🔭</span>DISCO-BETA</div><div class="oa"><span>🔄</span>CIRCU-BETA</div><div class="oa"><span>🌿</span>CROPS-BETA</div><div class="oa"><span>🌐</span>SOCIA-BETA</div><div class="oa"><span>🕊️</span>SPIRI-BETA</div><div class="oa"><span>🤙</span>SHAKA-BETA</div><div class="oa"><span>🎻</span>OSO-BETA</div><div class="oa"><span>🌷</span>JAI-BETA</div><div class="oa"><span>🌺</span>LEILANI</div><div class="oa"><span>🇪🇸</span>SOL</div><div class="oa"><span>🇨🇳</span>MING</div><div class="oa"><span>🇮🇳</span>GANGA</div><div class="oa"><span>🇸🇦</span>NOOR</div><div class="oa"><span>🇫🇷</span>FLEUR</div><div class="oa"><span>🇧🇷</span>RIO</div><div class="oa"><span>🇯🇵</span>HANA</div><div class="oa"><span>🇩🇪</span>BRUNO</div><div class="oa"><span>🏕️</span>ZUYAMI-LAB</div><div class="oa"><span>🐛🔨</span>BUG BUSTER</div><div class="oa"><span>🐸🍄</span>Terri Toad</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>📮</span>MAIL DESK</div><div class="oa"><span>🌅</span>New Era</div><div class="oa"><span>🕵️</span>Spector</div><div class="oa"><span>🗄️</span>Archy</div><div class="oa"><span>🐴</span>TROJAN</div><div class="oa"><span>🦉</span>ATHENA</div><div class="oa"><span>🚨</span>HUB SENTRY</div><div class="oa"><span>🎻</span>TWEET RELAY</div><div class="oa"><span>🌸</span>JAI DESK</div><div class="oa"><span>🧶</span>CensorNot</div><div class="oa"><span>🪡</span>OpenSow</div><div class="oa"><span>🔒</span>Privy</div><div class="oa"><span>🛡️</span>Secu</div><div class="oa"><span>🐕</span>PONO</div><div class="oa"><span>🎤</span>KPROT</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>🩷</span>KARA</div><div class="oa"><span>💙</span>OKE</div><div class="oa"><span>📺</span>TELE</div><div class="oa"><span>💃</span>VLOGITHA</div><div class="oa"><span>🍿</span>POPCORN</div></div>
 </div>
 <div id="olang" title="🌐 every language — on a “Planet We Share As One”" onclick="document.getElementById('oflop').classList.remove('open');document.getElementById('olangp').classList.toggle('open')">🌐</div>
 <div id="olangp"><span class="x" onclick="this.parentElement.classList.remove('open')">✕</span>
