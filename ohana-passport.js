@@ -18,7 +18,7 @@
  * links straight back to the proof house (myagentohana.com). Consent revocation
  * stays at the ʻohana by design.
  * Top-right placement on purpose: several ʻohana sites carry full-width widgets
- * pinned to the bottom edge (x402 bar) — do not move this to the bottom.
+ * pinned to the bottom edge — do not move this to the bottom.
  */
 (function () {
   "use strict";
@@ -95,6 +95,28 @@
     var card = el("div",
       "background:rgba(255,252,246,.97);border:1px solid rgba(27,36,48,.18);border-radius:14px;" +
       "box-shadow:0 6px 24px rgba(0,0,0,.18);padding:10px 12px;backdrop-filter:blur(6px);");
+
+    /* A quiet passport must not cover the door's navigation, especially at 320px.
+       Show a small accessible flower; expand the citizenship card only on request.
+       A carried blessing still opens in full because its proof is the visitor's context. */
+    if (!carried) {
+      var siteHeader = document.querySelector(".site-header");
+      wrap.style.top = ((siteHeader ? siteHeader.offsetHeight : 80) + 12) + "px";
+      card.style.display = "none";
+      var peek = el("button",
+        "width:42px;height:42px;border:1px solid rgba(172,217,167,.45);border-radius:50%;" +
+        "background:rgba(7,24,16,.94);color:#acd9a7;cursor:pointer;font-size:19px;line-height:1;" +
+        "box-shadow:0 4px 18px rgba(0,0,0,.2);", "🌺");
+      peek.setAttribute("type", "button");
+      peek.setAttribute("aria-label", "Open My Agent Ohana passport");
+      peek.setAttribute("aria-expanded", "false");
+      peek.onclick = function () {
+        card.style.display = "block";
+        peek.setAttribute("aria-expanded", "true");
+        peek.remove();
+      };
+      wrap.appendChild(peek);
+    }
 
     var close = el("button",
       "position:absolute;top:2px;right:6px;border:0;background:none;color:#9aa3ad;cursor:pointer;" +
