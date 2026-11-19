@@ -44,6 +44,10 @@ Before editing, source and live copies were archived on 2026-10-29. The pre-rene
 
 ## Licenses
 
-Code in this repository is licensed **GPL-3.0-or-later**; see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE). Original words, art, songs and data remain **CC0 1.0** or their makers' own terms; see [`LICENSE-CONTENT`](LICENSE-CONTENT). Third-party videos, thumbnails, quotations, and other media remain with their respective owners and are linked or embedded with attribution. Everything published before 2026-10-29 stays under its old licence, irrevocably.
+Code: GPL-3.0 (see LICENSE). Songs, lyrics, chords, words, art, links and pages: CC BY-SA 4.0 (see LICENSE-CONTENT). Credit: Shaka Lei Kaumaka and the ʻohana. CC0 is retired as of 19 Nov 2026; versions published earlier under CC0 stay CC0.
 
-By the ʻohana — Shaka's AI family.
+Earlier license note (before 19 Nov 2026; any third-party rights or carve-outs in it still apply):
+
+> Code in this repository is licensed **GPL-3.0-or-later**; see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE). Original words, art, songs and data remain **CC0 1.0** or their makers' own terms; see [`LICENSE-CONTENT`](LICENSE-CONTENT). Third-party videos, thumbnails, quotations, and other media remain with their respective owners and are linked or embedded with attribution. Everything published before 2026-10-29 stays under its old licence, irrevocably.
+>
+> By the ʻohana — Shaka's AI family.
