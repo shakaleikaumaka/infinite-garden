@@ -1,0 +1,3864 @@
+{
+ "schema": "oso-universe-constellations/0.1",
+ "goal": "Leave every gathering more open, more musical and more alive than we found it.",
+ "generated_at": "2026-11-21T20:29:44Z",
+ "generator": "constellations.py (AGPL-3.0-or-later + §7(b) credit)",
+ "license": "CC-BY-SA-4.0",
+ "credit": "Built on the universe roadmap by Open Source Orchestra: Shaka Lei Kaumaka & the AI ʻohana (https://opensourceorchestra.org)",
+ "machines": "Placed by a script written by the AI ʻohana (machines); Shaka Lei Kaumaka is the human steward.",
+ "atlas": {
+  "url": "https://myagentohana.com/doors/registry.json",
+  "probed_at": "2026-11-21T20:28:00.152577+00:00",
+  "public": 451,
+  "live": 451,
+  "doors_read": 451,
+  "unique_urls": 443,
+  "counted_as": "atlas entries (summary.public). 8 doors appear twice, as a domain root and as its own deep door; the atlas counts both, and so do we."
+ },
+ "total": 451,
+ "adds_up": true,
+ "held_total": 16,
+ "held_rule": "community-owned doors and private letters are counted and placed, but named only with their owners' yes",
+ "constellations": [
+  {
+   "id": "music",
+   "emoji": "🎻",
+   "name": "Music",
+   "slot": "top-left",
+   "serves": "more musical",
+   "line": "Open music circles, songs, radio and the artists who make them.",
+   "examples": [
+    "https://opensourceorchestra.org/",
+    "https://shakaleikaumaka.com/songbook/",
+    "https://shakaleikaumaka.com/radio/",
+    "https://opensourceorchestra.org/garden/circle/"
+   ],
+   "count": 96,
+   "held": 3
+  },
+  {
+   "id": "gatherings",
+   "emoji": "🏕️",
+   "name": "Gatherings",
+   "slot": "left",
+   "serves": "every gathering",
+   "line": "Pages made for one event, camp, village or hackathon: where we show up and play.",
+   "examples": [
+    "https://opensourceorchestra.org/schedule/",
+    "https://osodaomeet.opensourceorchestra.org/",
+    "https://shakaleikaumaka.com/camp/",
+    "https://myagentohana.com/shanhaiwoo/"
+   ],
+   "count": 57,
+   "held": 4
+  },
+  {
+   "id": "memory",
+   "emoji": "🕳️",
+   "name": "Memory",
+   "slot": "bottom-left",
+   "serves": "more alive",
+   "line": "PITs, recordings, photo albums and archives, so a gathering is remembered, with consent.",
+   "examples": [
+    "https://opensourceorchestra.org/mandala-room/",
+    "https://esmeraldapit.com/",
+    "https://osodaomeet.opensourceorchestra.org/archive/",
+    "https://opensourceorchestra.org/takedown/"
+   ],
+   "count": 73,
+   "held": 7
+  },
+  {
+   "id": "tools",
+   "emoji": "🛠️",
+   "name": "Open tools",
+   "slot": "top-right",
+   "serves": "more open",
+   "line": "Protocols, kits, guides and apps that anyone can use or fork today.",
+   "examples": [
+    "https://publicinform.com/spec/v2/",
+    "https://artist.opensourceorchestra.org/",
+    "https://myagentohana.com/doors/",
+    "https://opensourceorchestra.org/rider/"
+   ],
+   "count": 58,
+   "held": 0
+  },
+  {
+   "id": "agents",
+   "emoji": "🤖",
+   "name": "Agents",
+   "slot": "right",
+   "serves": "the keepers",
+   "line": "The AI ʻohana: machines that say they are machines, and keep the doors open.",
+   "examples": [
+    "https://myagentohana.com/ohana-bot/",
+    "https://myagentohana.com/village/",
+    "https://zodiacagents.org/",
+    "https://myagentohana.com/pulse/"
+   ],
+   "count": 121,
+   "held": 0
+  },
+  {
+   "id": "gifts",
+   "emoji": "🎁",
+   "name": "Gifts",
+   "slot": "bottom-right",
+   "serves": "giving back",
+   "line": "Thank-you letters, tips, grants and the open ledger: how value flows back to people.",
+   "examples": [
+    "https://opensourceorchestra.org/dao/",
+    "https://opensourceorchestra.org/the-room/",
+    "https://blessingpool.com/"
+   ],
+   "count": 46,
+   "held": 2
+  }
+ ],
+ "baseline": {
+  "github": null,
+  "agents": null,
+  "recordings_published_with_consent": 4,
+  "ledger": {
+   "listed": 27,
+   "applied": 8,
+   "awarded": 0,
+   "received": {
+    "A_usd": 0,
+    "B_usd": 0,
+    "as_of": "2026-11-14"
+   }
+  },
+  "probe": null
+ },
+ "rules": [
+  {
+   "constellation": "gifts",
+   "field": "path",
+   "regex": "^/(dao|tip|grants|letters|blessingpool|believers|connector|desert|seameetsbull|math|checklist|premortem|whitepaper|the-room)(/|$)",
+   "note": "a gift/letter/ledger path"
+  },
+  {
+   "constellation": "gifts",
+   "field": "host",
+   "regex": "^(blessingpool\\.com|grantmagnet\\.org|creationology369\\.com|ology369\\.com|pitprovides\\.(com|org)|imsorryjeremy\\.com|theinfinitegard\\.org)$",
+   "note": "a gift-economy or thank-you domain"
+  },
+  {
+   "constellation": "gifts",
+   "field": "title",
+   "regex": "\\bgrant\\b|deserves your grant|thank|mahalo|love letter|letters? ·|appreciation|for mike|for aya|blessing pool|charity|\\$ology|creationology|ology369|for robin|for jeremy|for serge|long journey team|golden ticket|love tour",
+   "note": "the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "constellation": "agents",
+   "field": "title",
+   "regex": "zodiac fleet|the front door of the wheel",
+   "note": "a Zodiac Fleet door"
+  },
+  {
+   "constellation": "agents",
+   "field": "host",
+   "regex": "^(aries|taurus|gemini|geminis|cancer|leo|virgo|libra|scorpio|sagittarius|capricorn|aquarius|pisces|piscis)agents\\.(org|com|club)$",
+   "note": "a Zodiac Fleet domain"
+  },
+  {
+   "constellation": "music",
+   "field": "title",
+   "regex": "music as sanctuary",
+   "note": "the orchestra's home"
+  },
+  {
+   "constellation": "music",
+   "field": "path",
+   "regex": "^/songbook(/|$)",
+   "note": "a chapter of the ʻohana Songbook"
+  },
+  {
+   "constellation": "tools",
+   "field": "host",
+   "regex": "^(publicinform|privateinform)\\.(com|org)$|^privatepit\\.com$|^shakaverse\\.com$|^teleprompit\\.com$|^vlogprompting\\.com$|^(tracewaste|wastetrace)\\.org$|^zuzaluagents\\.(com|org)$|^(pisces|piscis)institute\\.com$",
+   "note": "an open protocol, kit or tool domain"
+  },
+  {
+   "constellation": "tools",
+   "field": "path",
+   "regex": "^/protocol(/whitepaper)?/?$|^/rider(/|$)",
+   "note": "the P.I.T. protocol or the CC0 rider"
+  },
+  {
+   "constellation": "tools",
+   "field": "title",
+   "regex": "fork the first artist|osoartist\\.eth|trustgraph|trust lab|hash caf|teleprompt|pit in a box|scribe pit|vlog pit|vlog prompting|for dummies|open classroom|institute|build your first agent|construye|guided journey|raise your own|village kit|fork the whole universe|playbook|brand board|\\btrace\\b|waste|music space rider|\\brider\\b(?! board)",
+   "note": "the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "constellation": "gatherings",
+   "field": "title",
+   "regex": "terrible turtle camp|turtle ops|turtle (bins|chef|food|lessons)|the playa|camp hq|meeting agendas|kitchen &|power budget|rentals|shade structure|supplies|build timeline|trailer load|haul sheet|sanitation",
+   "note": "a page for one camp"
+  },
+  {
+   "constellation": "gatherings",
+   "field": "slug",
+   "regex": "^(camp-|ttc-|turtle-|kitchen-list|jade-order|shd-hardware|shell-pit$)",
+   "note": "a page for one camp (hosted)"
+  },
+  {
+   "constellation": "music",
+   "field": "title",
+   "regex": "radio|live pit ·",
+   "note": "a radio"
+  },
+  {
+   "constellation": "memory",
+   "field": "title",
+   "regex": "fork of the p\\.i\\.t|public information transmission|transmission pit|\\btransmission\\b|zupit|p\\.i\\.t\\.|\\bpit\\b|infinite pit|vitpit",
+   "note": "a P.I.T., the memory room of a gathering"
+  },
+  {
+   "constellation": "memory",
+   "field": "title",
+   "regex": "mandala room|photo|slideshow|archive|recording|weekly call|the calls|transcript|build library|histor|journey|camera|media files|proposal meeting|listen to the hall|six channels|podfather|the playa always provides",
+   "note": "the title says it remembers"
+  },
+  {
+   "constellation": "memory",
+   "field": "path",
+   "regex": "^/(archive|meetings|narration|channels|mandala-room|camera|openrecording2|calls|photos|pit)(/|$)",
+   "note": "an archive path"
+  },
+  {
+   "constellation": "music",
+   "field": "title",
+   "regex": "full circle|artist profiles|garden gate|bloom tracker|rider board|\\bnodes?\\b|garden circle|submissions",
+   "note": "the artists of the garden"
+  },
+  {
+   "constellation": "music",
+   "field": "path",
+   "regex": "^/(join|contribute|garden|nodes)(/|$)",
+   "note": "the orchestra's open door and artists"
+  },
+  {
+   "constellation": "gatherings",
+   "field": "title",
+   "regex": "devcon|ethglobal|hackathon|tokyo|mumbai|shanhaiwoo|shenzhen|山海坞|komoro|zucity|zuzalu|esmeralda|edge city|pop-up|schedule|waiting list|committee|war room|weird hobby|sanctuary|dao meet|og circle|the first circle|nomad market|road to",
+   "note": "a page made for one gathering"
+  },
+  {
+   "constellation": "music",
+   "field": "title",
+   "regex": "\\bsongs?\\b|songbook|anthem|music|orchestra|karaoke|ukulele|\\bkala\\b|bard|artist|fan club|wake-up|chords?|circle of fifths",
+   "note": "a music page"
+  },
+  {
+   "constellation": "music",
+   "field": "host",
+   "regex": "^(opensourceorchestra\\.(org|com)|shakaleikaumaka\\.(com|org)|ethereumbard\\.com|karaokeprotocol\\.com)$",
+   "note": "an artist or orchestra home"
+  },
+  {
+   "constellation": "tools",
+   "field": "title",
+   "regex": "protocol|white paper|\\bkit\\b|guide|how to|fork|\\batlas\\b|all doors|generator|logo|explainer|tumble|geometry|torus|studio|ens\\b",
+   "note": "a tool, kit or guide"
+  },
+  {
+   "constellation": "agents",
+   "field": "title",
+   "regex": "agent|ʻohana|ohana|totem|\\bbot\\b|taurus|dash crash pad|pulse|beacon|village|market|launch|citizen|app store|review board|desk|queue|spector|green room|\\bjai\\b|world mini app",
+   "note": "an agents page"
+  },
+  {
+   "constellation": "agents",
+   "field": "host",
+   "regex": "^(myagentohana\\.com|agentohana\\.org|dashboardpad\\.app|taurusdashboard\\.com|tauroagents\\.com|tauroinstitute\\.com|taurusagents\\.org|taurusinstitute\\.(com|org)|spector(agent|gadget)\\.com|globyagent\\.com|terribleagents\\.com|affordagents\\.com)$",
+   "note": "an agents domain"
+  },
+  {
+   "constellation": "memory",
+   "field": "host",
+   "regex": "pit\\.(com|org)$|^infinitepit\\.com$|^eefpod\\.com$",
+   "note": "a P.I.T. domain"
+  },
+  {
+   "constellation": "gatherings",
+   "field": "host",
+   "regex": "^osodao(meet\\.opensourceorchestra\\.org|\\.(org|com|app))$",
+   "note": "a gathering hall"
+  }
+ ],
+ "overrides": [
+  {
+   "key": "opensourceorchestra.org/commitee/",
+   "constellation": "gatherings",
+   "reason": "old misspelled path that redirects to /committee/"
+  },
+  {
+   "key": "opensourceorchestra.org/takedown/",
+   "constellation": "memory",
+   "reason": "consent is the guard of every archive: takedown first"
+  },
+  {
+   "key": "opensourceorchestra.org/watch/",
+   "constellation": "memory",
+   "reason": "videos from the road: an archive"
+  },
+  {
+   "key": "opensourceorchestra.org/devasjourney/",
+   "constellation": "memory",
+   "reason": "the history of every Devcon music stage"
+  },
+  {
+   "key": "slug:devcon",
+   "constellation": "memory",
+   "reason": "the history of every Devcon music stage (hosted copy)"
+  },
+  {
+   "key": "opensourceorchestra.org/song/",
+   "constellation": "music",
+   "reason": "a stage card for a song"
+  },
+  {
+   "key": "slug:shanhaiwoo-song",
+   "constellation": "music",
+   "reason": "a stage card for a song"
+  },
+  {
+   "key": "myagentohana.com/voice/",
+   "constellation": "memory",
+   "reason": "Shaka's own words, kept open (CC BY-SA)"
+  },
+  {
+   "key": "myagentohana.com/hugs/",
+   "constellation": "gifts",
+   "reason": "hugs = encouragement gifted in Shaka's voice"
+  },
+  {
+   "key": "myagentohana.com/doors/",
+   "constellation": "tools",
+   "reason": "the open atlas of every door"
+  },
+  {
+   "key": "slug:doors",
+   "constellation": "tools",
+   "reason": "the open atlas of every door (hosted copy)"
+  },
+  {
+   "key": "slug:door-strategy",
+   "constellation": "tools",
+   "reason": "the open strategy of the doors (CC0)"
+  },
+  {
+   "key": "slug:new-door-dreams",
+   "constellation": "tools",
+   "reason": "a dreambook for new doors"
+  },
+  {
+   "key": "myagentohana.com/ohana-bot/plan/shanhaiwoo-72h/",
+   "constellation": "gatherings",
+   "reason": "the plan for one hackathon (ShanHaiWoo 72h)"
+  },
+  {
+   "key": "myagentohana.com/booth/",
+   "constellation": "agents",
+   "reason": "the booth lane of My Agent ʻOhana"
+  },
+  {
+   "key": "myagentohana.com/china/",
+   "constellation": "agents",
+   "reason": "a letter about the agents, in Chinese"
+  },
+  {
+   "key": "artist.opensourceorchestra.org/steward/proof/",
+   "constellation": "agents",
+   "reason": "every answer of an AI steward, unedited"
+  },
+  {
+   "key": "shakaleikaumaka.com/savetheworld/",
+   "constellation": "tools",
+   "reason": "the open field manual: fork it, run it in your town"
+  },
+  {
+   "key": "shakaleikaumaka.com/stage/",
+   "constellation": "tools",
+   "reason": "the open-source pop-up A/V stage playbook"
+  },
+  {
+   "key": "shakaleikaumaka.com/pen/",
+   "constellation": "tools",
+   "reason": "a how-to guide: give your agent the pen"
+  },
+  {
+   "key": "slug:agent-tweets",
+   "constellation": "tools",
+   "reason": "a how-to guide: give your agent the pen (hosted copy)"
+  },
+  {
+   "key": "shakaleikaumaka.com/protocol/osopit/",
+   "constellation": "memory",
+   "reason": "the first PIT archive, restored"
+  },
+  {
+   "key": "shakaleikaumaka.com/twelvedreams/",
+   "constellation": "agents",
+   "reason": "the first words of the Zodiac Fleet"
+  },
+  {
+   "key": "slug:twelve-dreams",
+   "constellation": "agents",
+   "reason": "the first words of the Zodiac Fleet (hosted copy)"
+  },
+  {
+   "key": "shakaleikaumaka.com/dash/",
+   "constellation": "agents",
+   "reason": "the dashboard of the ʻohana"
+  },
+  {
+   "key": "shakaleikaumaka.com/cv/",
+   "constellation": "music",
+   "reason": "the artist's CV"
+  },
+  {
+   "key": "shakaleikaumaka.com/before/",
+   "constellation": "music",
+   "reason": "the artist's origin story"
+  },
+  {
+   "key": "slug:before-i-was-shaka",
+   "constellation": "music",
+   "reason": "the artist's origin story (hosted copy)"
+  },
+  {
+   "key": "pretty.agentohana.org/",
+   "constellation": "agents",
+   "reason": "the pretty paper of the JAI · PIT · OHANA triad"
+  },
+  {
+   "key": "chat.opensourceorchestra.org/poll",
+   "constellation": "agents",
+   "reason": "the chat hub where the Open Source Orchestra's AI steward answers"
+  },
+  {
+   "key": "chat.theshellpit.com/poll",
+   "constellation": "agents",
+   "reason": "the chat hub of a camp's AI steward"
+  },
+  {
+   "key": "orchestrator.opensourceorchestra.org/",
+   "constellation": "music",
+   "reason": "songbooks for every artist"
+  },
+  {
+   "key": "slug:aloha-tumble",
+   "constellation": "tools",
+   "reason": "a small open word game (kanji + ʻŌlelo Hawaiʻi)"
+  },
+  {
+   "key": "slug:bug-busters",
+   "constellation": "agents",
+   "reason": "the ʻohana's own bug story"
+  },
+  {
+   "key": "slug:dedication",
+   "constellation": "gatherings",
+   "reason": "a dedication card for one hackathon"
+  },
+  {
+   "key": "slug:demo-lab",
+   "constellation": "agents",
+   "reason": "a demo cut of My Agent ʻOhana"
+  },
+  {
+   "key": "slug:ohana-title",
+   "constellation": "agents",
+   "reason": "a title clip of My Agent ʻOhana"
+  },
+  {
+   "key": "slug:equinox-logos",
+   "constellation": "tools",
+   "reason": "a logo pack anyone can save"
+  },
+  {
+   "key": "slug:studio-demo",
+   "constellation": "tools",
+   "reason": "an open procedural film demo"
+  },
+  {
+   "key": "slug:plato369",
+   "constellation": "tools",
+   "reason": "an interactive geometry explainer"
+  },
+  {
+   "key": "slug:torus369",
+   "constellation": "tools",
+   "reason": "an interactive geometry explainer"
+  },
+  {
+   "key": "slug:vortex-fifths",
+   "constellation": "music",
+   "reason": "the circle of fifths, explained"
+  },
+  {
+   "key": "slug:three-smiths",
+   "constellation": "gifts",
+   "reason": "a tribute to three builders"
+  },
+  {
+   "key": "slug:storybook-parables",
+   "constellation": "music",
+   "reason": "the bard's parables as an animated storybook"
+  },
+  {
+   "key": "slug:serge-meeting",
+   "constellation": "memory",
+   "reason": "a historical conversation, kept"
+  },
+  {
+   "key": "slug:shaka-pack",
+   "constellation": "agents",
+   "reason": "a reading pack the agents assembled"
+  },
+  {
+   "key": "slug:letter-approvals",
+   "constellation": "agents",
+   "reason": "the agents' letter desk (drafts wait for a blessing)"
+  },
+  {
+   "key": "slug:x-bless",
+   "constellation": "agents",
+   "reason": "the agents' posting desk (drafts wait for a blessing)"
+  },
+  {
+   "key": "slug:x-unfollow",
+   "constellation": "agents",
+   "reason": "an agents' checklist"
+  },
+  {
+   "key": "slug:merch-preview",
+   "constellation": "gifts",
+   "reason": "gift-first merch: music free, blessings flow back"
+  },
+  {
+   "key": "slug:judges",
+   "constellation": "agents",
+   "reason": "My Agent ʻOhana, introduced to judges"
+  },
+  {
+   "key": "slug:orbie",
+   "constellation": "agents",
+   "reason": "the story of ORBIE, an agent"
+  },
+  {
+   "key": "slug:cuiheng",
+   "constellation": "memory",
+   "reason": "a pilgrimage to the ancestors, remembered"
+  },
+  {
+   "key": "slug:pit-app",
+   "constellation": "tools",
+   "reason": "the P.I.T. app itself"
+  },
+  {
+   "key": "slug:pit-stream",
+   "constellation": "memory",
+   "reason": "a live P.I.T. stream of one gathering"
+  },
+  {
+   "key": "slug:food-loop",
+   "constellation": "tools",
+   "reason": "an open food-loop concept for camp kitchens"
+  },
+  {
+   "key": "slug:fireside",
+   "constellation": "gatherings",
+   "reason": "a fireside kit for one event"
+  },
+  {
+   "key": "slug:shaka-talk",
+   "constellation": "music",
+   "reason": "the artist's Devcon 8 talk: music and culture are free"
+  },
+  {
+   "key": "slug:shaka-miniapp",
+   "constellation": "music",
+   "reason": "the artist's mini app"
+  },
+  {
+   "key": "slug:tokyo-sessions",
+   "constellation": "memory",
+   "reason": "sessions of one hackathon, kept"
+  },
+  {
+   "key": "slug:aya-infinite-teachers",
+   "constellation": "memory",
+   "reason": "a reading of a talk, kept"
+  },
+  {
+   "key": "eefpod.com/",
+   "constellation": "memory",
+   "reason": "a transmission pit dedicated to a friend"
+  },
+  {
+   "key": "slug:eefpod",
+   "constellation": "memory",
+   "reason": "a transmission pit dedicated to a friend (hosted copy)"
+  },
+  {
+   "key": "zodiacpit.com/",
+   "constellation": "agents",
+   "reason": "the PIT of the Zodiac Fleet"
+  },
+  {
+   "key": "slug:zodiacpit",
+   "constellation": "agents",
+   "reason": "the PIT of the Zodiac Fleet (hosted copy)"
+  },
+  {
+   "key": "islpoap.xyz/",
+   "constellation": "memory",
+   "reason": "where proofs of attendance live on"
+  },
+  {
+   "key": "slug:islpoap",
+   "constellation": "memory",
+   "reason": "where proofs of attendance live on (hosted copy)"
+  },
+  {
+   "key": "pitfans.com/",
+   "constellation": "memory",
+   "reason": "the fan wall for every P.I.T."
+  },
+  {
+   "key": "kaleikaumaka.org/",
+   "constellation": "memory",
+   "reason": "a recap of one day: the doors we opened"
+  },
+  {
+   "key": "shakafans.com/",
+   "constellation": "music",
+   "reason": "the artist's fan club"
+  },
+  {
+   "key": "slug:gemini-transmission",
+   "constellation": "agents",
+   "reason": "the first transmission of GEMINI, a Zodiac Fleet agent"
+  },
+  {
+   "key": "slug:privatepit",
+   "constellation": "tools",
+   "reason": "the private P.I.T. white paper (hosted copy)"
+  },
+  {
+   "key": "slug:shaka-app",
+   "constellation": "music",
+   "reason": "the artist's app"
+  },
+  {
+   "key": "globyagent.com/",
+   "constellation": "agents",
+   "reason": "GLOBY, the ʻohana's hackathon mascot agent"
+  },
+  {
+   "key": "slug:jai-heart-hackathon-gallery",
+   "constellation": "agents",
+   "reason": "an agents-only hackathon, judged blind"
+  },
+  {
+   "key": "myagentohana.com/team/",
+   "constellation": "agents",
+   "reason": "the team page of My Agent ʻOhana"
+  },
+  {
+   "key": "slug:team-slides",
+   "constellation": "agents",
+   "reason": "the team slides of My Agent ʻOhana"
+  },
+  {
+   "key": "slug:podfather",
+   "constellation": "memory",
+   "reason": "a podcast episode, kept"
+  },
+  {
+   "key": "slug:greenroom",
+   "constellation": "agents",
+   "reason": "an agents marketplace strategy"
+  },
+  {
+   "key": "slug:hedera-proposal",
+   "constellation": "gifts",
+   "reason": "a grant proposal"
+  },
+  {
+   "key": "slug:launchpad-whitepaper",
+   "constellation": "agents",
+   "reason": "the white paper of My Agent ʻOhana"
+  },
+  {
+   "key": "myagentohana.com/whitepaper.html",
+   "constellation": "agents",
+   "reason": "the white paper of My Agent ʻOhana"
+  },
+  {
+   "key": "myagentohana.com/ohana-bot/watcher/",
+   "constellation": "agents",
+   "reason": "a kit for the ʻOhana Bot's face"
+  },
+  {
+   "key": "spectorgadget.com/",
+   "constellation": "agents",
+   "reason": "the white paper of an agent"
+  },
+  {
+   "key": "taurusagents.org/",
+   "constellation": "agents",
+   "reason": "Taurus, the platform where the ʻohana lives"
+  }
+ ],
+ "held_keys": "sha256('host/path' or 'slug:<slug>')[:16] → constellation (names stay out of this file)",
+ "doors": [
+  {
+   "held": true,
+   "kind": "primary",
+   "constellation": "gatherings",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "held": true,
+   "kind": "primary",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "held": true,
+   "kind": "primary",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://affordagents.com/",
+   "kind": "primary",
+   "title": "AFFORD AGENTS — Hire Agent Employees at Family Prices",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentohana.org/",
+   "kind": "primary",
+   "title": "🌺 AGENT OHANA — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://agentpartys.com/",
+   "kind": "primary",
+   "title": "🪩 AGENT PARTYS — the 3D dance floor of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentscraving.com/",
+   "kind": "primary",
+   "title": "🍧 AGENTS CRAVING — what do agents hunger for?",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentsraving.com/",
+   "kind": "primary",
+   "title": "🎇 AGENTS RAVING — the rave door of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentsreading.com/",
+   "kind": "primary",
+   "title": "📚 AGENTS READING — the reading room of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://aquariusagents.org/",
+   "kind": "primary",
+   "title": "♒ AQUARIUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://ariesagents.org/",
+   "kind": "primary",
+   "title": "♈ ARIES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://blessingpool.com/",
+   "kind": "primary",
+   "title": "🌊 The Blessing Pool — Freely I Give, Freely I Receive",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://canceragents.org/",
+   "kind": "primary",
+   "title": "♋ CANCER — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://capricornagents.org/",
+   "kind": "primary",
+   "title": "♑ CAPRICORN — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://creationology369.com/",
+   "kind": "primary",
+   "title": "CREATIONology369 — 🌱 A Stored Dream",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://dashboardpad.app/",
+   "kind": "primary",
+   "title": "DASH CRASH PAD 🎛️ — The Constellation of the ʻOhana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://devconpit.com/",
+   "kind": "primary",
+   "title": "DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · Devcon 8 Mumbai, it happened",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://eefpit.com/",
+   "kind": "primary",
+   "title": "EEFPIT 🎙️🕳️ — The 11th Fork of the P.I.T. Protocol · DECLARED for the EF Friends Podcast",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://eefpod.com/",
+   "kind": "primary",
+   "title": "🎙️ EEFPOD — for Siri",
+   "constellation": "memory",
+   "why": "override: a transmission pit dedicated to a friend"
+  },
+  {
+   "url": "https://esmeraldapit.com/",
+   "kind": "primary",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://frames.opensourceorchestra.org/",
+   "kind": "primary",
+   "title": "Open Source Orchestra Frames · the open frame around any screen",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://geminiagents.club/",
+   "kind": "primary",
+   "title": "♊ GEMINI — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://globyagent.com/",
+   "kind": "primary",
+   "title": "GLOBY 🌍 — the world's hackathon mascot",
+   "constellation": "agents",
+   "why": "override: GLOBY, the ʻohana's hackathon mascot agent"
+  },
+  {
+   "url": "https://grantmagnet.org/",
+   "kind": "primary",
+   "title": "Why Shaka Deserves Your Grant — The Ethereum Bard",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://imsorryjeremy.com/",
+   "kind": "primary",
+   "title": "imsorryjeremy — a love tour of Terrible Turtle Camp",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://infinitepit.com/",
+   "kind": "primary",
+   "title": "Infinite Pit — the memory of the Infinite Garden",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://islpoap.xyz/",
+   "kind": "primary",
+   "title": "ISLPOAP 🏝️ — the island where POAPs live on",
+   "constellation": "memory",
+   "why": "override: where proofs of attendance live on"
+  },
+  {
+   "url": "https://kaleikaumaka.org/",
+   "kind": "primary",
+   "title": "Devcon's Eve · 29 Oct 2026 · the doors we opened — Kaleikaumaka",
+   "constellation": "memory",
+   "why": "override: a recap of one day: the doors we opened"
+  },
+  {
+   "url": "https://karaokeprotocol.com/",
+   "kind": "primary",
+   "title": "THE KARAOKE PROTOCOL 🔥🎤",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://lang.opensourceorchestra.org/",
+   "kind": "primary",
+   "title": "ʻŌlelo · every language, every ʻohana door",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://learnfromagents.com/",
+   "kind": "primary",
+   "title": "🎓 LEARN FROM AGENTS — the open classroom",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://leoagents.org/",
+   "kind": "primary",
+   "title": "♌ LEO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://libraagents.org/",
+   "kind": "primary",
+   "title": "♎ LIBRA — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://myagentfamily.com/",
+   "kind": "primary",
+   "title": "🏡 MY AGENT FAMILY — what it is like to live with 99 agents",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/",
+   "kind": "primary",
+   "title": "ʻOhana · Talk to the Totem · ʻOhana Bot — one body, six souls",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentsparty.com/",
+   "kind": "primary",
+   "title": "🎉 MY AGENTS PARTY — throw your own",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://ohanapit.com/",
+   "kind": "primary",
+   "title": "OHANA PIT 🌺🕳️ — The 13th Fork of the P.I.T. Protocol · DECLARED",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://ology369.com/",
+   "kind": "primary",
+   "title": "OLOGY369 — 🌱 A Stored Dream",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://opensourceorchestra.org/",
+   "kind": "primary",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://osopit.com/",
+   "kind": "primary",
+   "title": "🎻 OSO PIT — the orchestra's own P.I.T.",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://piscesagents.org/",
+   "kind": "primary",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscesinstitute.com/",
+   "kind": "primary",
+   "title": "From Absolute Zero — Build Your First Agent · Pisces Institute",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://piscisagents.org/",
+   "kind": "primary",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscisinstitute.com/",
+   "kind": "primary",
+   "title": "Desde el Cero Absoluto — Construye Tu Primer Agente · Piscis Institute",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://piscispit.com/",
+   "kind": "primary",
+   "title": "♓ PISCISPIT — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://pitfans.com/",
+   "kind": "primary",
+   "title": "PITFANS 🕳️❤️ — the fan wall for every P.I.T.",
+   "constellation": "memory",
+   "why": "override: the fan wall for every P.I.T."
+  },
+  {
+   "url": "https://pitgoa.com/",
+   "kind": "primary",
+   "title": "PIT GOA 🌴🕳️ — The 14th Fork of the P.I.T. Protocol · declared for Goa Edge City (sorry, we didn't Goa 🙏)",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://pitlip.com/",
+   "kind": "primary",
+   "title": "PIT LIP 💋 — Leave It Prettier · The 9th Fork of the P.I.T. Protocol",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://pitprovides.com/",
+   "kind": "primary",
+   "title": "The Pit Provides 🤲🕳️ — the charity leg of the P.I.T. universe",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://privateinform.com/",
+   "kind": "primary",
+   "title": "The Private P.I.T. — Private Information Transmission · White Paper 🔒🕳️",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://publicinform.com/",
+   "kind": "primary",
+   "title": "The P.I.T. Protocol — Public Information Transmission",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://sagittariusagents.org/",
+   "kind": "primary",
+   "title": "♐ SAGITTARIUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://scorpioagents.org/",
+   "kind": "primary",
+   "title": "♏ SCORPIO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://shakafans.com/",
+   "kind": "primary",
+   "title": "🫶 SHAKA FANS — the fan club · give & get close",
+   "constellation": "music",
+   "why": "override: the artist's fan club"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/",
+   "kind": "primary",
+   "title": "Shaka Lei Kaumaka — The Ethereum Bard",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shakapit.com/",
+   "kind": "primary",
+   "title": "The Shaka P.I.T. 🤙🎸 — the bard's own personal Public Information Transmission",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://shakaverse.com/",
+   "kind": "primary",
+   "title": "🍴 SHAKAVERSE — fork the whole universe (everything copyleft)",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://shanhaipit.com/",
+   "kind": "primary",
+   "title": "The ShanHaiWoo P.I.T. ⛰️🌊🕳️ — Public Information Transmission · the Shanghai village, transmitted",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://spectoragent.com/",
+   "kind": "primary",
+   "title": "Spector — AI real-estate research desk · Chiang Mai report $36.90 one-time",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://spectorgadget.com/",
+   "kind": "primary",
+   "title": "Spector Gadget — White Paper · Your vacancy-filling agent, in your pocket",
+   "constellation": "agents",
+   "why": "override: the white paper of an agent"
+  },
+  {
+   "url": "https://tauruspit.com/",
+   "kind": "primary",
+   "title": "TAURUS PIT 🐂🕳️ — The 10th Fork of the P.I.T. Protocol · DECLARED",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://teleprompit.com/",
+   "kind": "primary",
+   "title": "TELEPROMPIT 📺",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://terribleagents.com/",
+   "kind": "primary",
+   "title": "TERRIBLE AGENTS — What AI Agents Are Still Terrible At",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://theinfinitegard.org/",
+   "kind": "primary",
+   "title": "The Infinite Garden — for Aya Miyaguchi, with aloha",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://theshellpit.com/",
+   "kind": "primary",
+   "title": "The Shell Pit 🐢 | Terrible Turtle Camp — A Gift to the Playa",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://tracewaste.org/",
+   "kind": "primary",
+   "title": "👨 TRACE WASTE — nothing wasted, everything traced",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://virgoagents.org/",
+   "kind": "primary",
+   "title": "♍ VIRGO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://vlogprompting.com/",
+   "kind": "primary",
+   "title": "VLOG PROMPTING 🎬🤖 — talk to camera, not to keyboard",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://wastetrace.org/",
+   "kind": "primary",
+   "title": "WASTE TRACE — Leave No Trace begins at the menu",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://zodiacagents.org/",
+   "kind": "primary",
+   "title": "♈ ZODIAC AGENTS — The Front Door of the Wheel",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://zodiacpit.com/",
+   "kind": "primary",
+   "title": "♈🕳️ ZODIAC PIT — Fork of the Wheel",
+   "constellation": "agents",
+   "why": "override: the PIT of the Zodiac Fleet"
+  },
+  {
+   "held": true,
+   "kind": "primary",
+   "constellation": "gatherings",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://zupit.org/",
+   "kind": "primary",
+   "title": "ZuPit — the Zuzalu transmission · every Zu village, one door",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://zuzaluagents.com/",
+   "kind": "primary",
+   "title": "🏕️ ZUZALU AGENTS — The Village Kit",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "gatherings",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://artist.opensourceorchestra.org/",
+   "kind": "subpath",
+   "title": "Fork the First Artist · The Full Circle · Open Source Orchestra 🎻",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://artist.opensourceorchestra.org/steward/proof/",
+   "kind": "subpath",
+   "title": "Proof of OG 🧠🤙 · Shaka's 0G steward, every answer unedited · Fork the First Artist",
+   "constellation": "agents",
+   "why": "override: every answer of an AI steward, unedited"
+  },
+  {
+   "url": "https://artist.opensourceorchestra.org/tip",
+   "kind": "subpath",
+   "title": "💸 Tip the artist · any Ethereum chain · Open Source Orchestra",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://frames.opensourceorchestra.org/trademark/",
+   "kind": "subpath",
+   "title": "The frame is the mark — Open Source Orchestra Frames",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://kaleikaumaka.org/",
+   "kind": "subpath",
+   "title": "Devcon's Eve · 29 Oct 2026 · the doors we opened — Kaleikaumaka",
+   "constellation": "memory",
+   "why": "override: a recap of one day: the doors we opened"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "music",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://myagentohana.com/",
+   "kind": "subpath",
+   "title": "ʻOhana · Talk to the Totem · ʻOhana Bot — one body, six souls",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/booth/",
+   "kind": "subpath",
+   "title": "BOOTH LANE · real World verify 🌍",
+   "constellation": "agents",
+   "why": "override: the booth lane of My Agent ʻOhana"
+  },
+  {
+   "url": "https://myagentohana.com/china/",
+   "kind": "subpath",
+   "title": "从一首歌，到 188 个智能体 · ʻohana 的一封中文信",
+   "constellation": "agents",
+   "why": "override: a letter about the agents, in Chinese"
+  },
+  {
+   "url": "https://myagentohana.com/doors/",
+   "kind": "subpath",
+   "title": "All Doors · A Gift to the World · ʻOhana Sanctuary",
+   "constellation": "tools",
+   "why": "override: the open atlas of every door"
+  },
+  {
+   "url": "https://myagentohana.com/hugs/",
+   "kind": "subpath",
+   "title": "ʻOhana hugs — in Shaka&#x27;s voice · written by the ʻohana",
+   "constellation": "gifts",
+   "why": "override: hugs = encouragement gifted in Shaka's voice"
+  },
+  {
+   "url": "https://myagentohana.com/marketblueprint/",
+   "kind": "subpath",
+   "title": "📐 Market Blueprint · My Agent Ohana — hire · bless · revoke",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/",
+   "kind": "subpath",
+   "title": "Talk to the Totem · ʻOhana Bot — one body, six souls",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/ar/",
+   "kind": "subpath",
+   "title": "AR GLASSES → DEMO DAY 🕶️",
+   "constellation": "agents",
+   "why": "rule host~an agents domain"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/ar/debug/",
+   "kind": "subpath",
+   "title": "Ohana × Rokid 真机调试卡",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/build/",
+   "kind": "subpath",
+   "title": "🗿 ʻOhana Bot — Virtual Assembly 虚拟装配",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/plan/",
+   "kind": "subpath",
+   "title": "🗿 The ʻOhana Bot — history as we make it (newest on top)",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/plan/shanhaiwoo-72h/",
+   "kind": "subpath",
+   "title": "🗿 the ʻOhana Bot — the Win Plan · ShanHaiWoo 72h",
+   "constellation": "gatherings",
+   "why": "override: the plan for one hackathon (ShanHaiWoo 72h)"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/shopping/",
+   "kind": "subpath",
+   "title": "🛒 ʻOhana Bot — Huaqiangbei Shopping List 华强北采购单",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/totem/",
+   "kind": "subpath",
+   "title": "🗿 ʻOhana Bot — Virtual Assembly 虚拟装配",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/ohana-bot/watcher/",
+   "kind": "subpath",
+   "title": "ʻOhana Watcher kit · SenseCAP Watcher → SHAKA's face",
+   "constellation": "agents",
+   "why": "override: a kit for the ʻOhana Bot's face"
+  },
+  {
+   "url": "https://myagentohana.com/pulse/",
+   "kind": "subpath",
+   "title": "PULSE OF THE ʻOHANA 🫀🌺 — the live nervous system of the pad",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/shanhaiwoo/",
+   "kind": "subpath",
+   "title": "山海坞 · ShanHaiWoo Shenzhen Map 🗺️",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://myagentohana.com/taurus/",
+   "kind": "subpath",
+   "title": "Taurus — Where the ʻOhana Lives · ʻOhana 之家",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/team/",
+   "kind": "subpath",
+   "title": "My Agent ʻOhana — The Team · ETHGlobal Tokyo 2026",
+   "constellation": "agents",
+   "why": "override: the team page of My Agent ʻOhana"
+  },
+  {
+   "url": "https://myagentohana.com/totem/",
+   "kind": "subpath",
+   "title": "Talk to the Totem — public Key-12 faces · My Agent ʻOhana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/village/",
+   "kind": "subpath",
+   "title": "The Village — every agent of the ʻohana · My Agent ʻOhana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana.com/voice/",
+   "kind": "subpath",
+   "title": "Voice Prompts — Shaka's words, open source · ʻOhana",
+   "constellation": "memory",
+   "why": "override: Shaka's own words, kept open (CC BY-SA)"
+  },
+  {
+   "url": "https://myagentohana.com/whitepaper.html",
+   "kind": "subpath",
+   "title": "My Agent ʻOhana — white paper · the tri-protocol launchpad",
+   "constellation": "agents",
+   "why": "override: the white paper of My Agent ʻOhana"
+  },
+  {
+   "url": "https://opensourceorchestra.org/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://opensourceorchestra.org/calls/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra · the calls — weekly call #2 (27 Oct 2026)",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://opensourceorchestra.org/camera/",
+   "kind": "subpath",
+   "title": "📸 Camera — Devcon 8 Music Sanctuary · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://opensourceorchestra.org/commitee/",
+   "kind": "subpath",
+   "title": "Redirecting…",
+   "constellation": "gatherings",
+   "why": "override: old misspelled path that redirects to /committee/"
+  },
+  {
+   "url": "https://opensourceorchestra.org/committee/",
+   "kind": "subpath",
+   "title": "The Music Space Committee · Devcon 8 Mumbai — Open Source Orchestra",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://opensourceorchestra.org/contribute/",
+   "kind": "subpath",
+   "title": "Join the Orchestra 🎻 — How to Contribute · Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule path~the orchestra's open door and artists"
+  },
+  {
+   "url": "https://opensourceorchestra.org/dao/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra DAO · the open ledger",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://opensourceorchestra.org/dao/health/",
+   "kind": "subpath",
+   "title": "Public goods health · Open Source Orchestra",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://opensourceorchestra.org/devasjourney/",
+   "kind": "subpath",
+   "title": "DEVA'S JOURNEY — the heartbeat of ethereum · every devcon music stage",
+   "constellation": "memory",
+   "why": "override: the history of every Devcon music stage"
+  },
+  {
+   "url": "https://opensourceorchestra.org/ethglobalmumbai/",
+   "kind": "subpath",
+   "title": "🎻 Fork the First Artist — ETHGlobal Mumbai · Open Source Orchestra",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/",
+   "kind": "subpath",
+   "title": "Devcon 8 India · Music Space — Submissions",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/",
+   "kind": "subpath",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/EF/",
+   "kind": "subpath",
+   "title": "Garden Circle",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/ef/",
+   "kind": "subpath",
+   "title": "Garden Circle",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/v1/",
+   "kind": "subpath",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/v2/",
+   "kind": "subpath",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/v3/",
+   "kind": "subpath",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/circle/v4/",
+   "kind": "subpath",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/flowers/",
+   "kind": "subpath",
+   "title": "The Garden Gate 🌷 Devcon 8 Music Space — Next Steps Bloom Tracker",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/profiles/",
+   "kind": "subpath",
+   "title": "The Garden — Devcon 8 Music Space artist profiles",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/garden/riders/",
+   "kind": "subpath",
+   "title": "The Rider Board — Devcon 8 Music Space",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/howtojoin/",
+   "kind": "subpath",
+   "title": "How to join the Open Source Orchestra · four ways in",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://opensourceorchestra.org/join/",
+   "kind": "subpath",
+   "title": "Join the Open Source Orchestra · Road to Lisbon (Devcon 9)",
+   "constellation": "music",
+   "why": "rule path~the orchestra's open door and artists"
+  },
+  {
+   "url": "https://opensourceorchestra.org/learn/",
+   "kind": "subpath",
+   "title": "Learn · play with the Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://opensourceorchestra.org/mandala-room/",
+   "kind": "subpath",
+   "title": "The Mandala Room · Devcon 8 Music Sanctuary, Mumbai · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/",
+   "kind": "subpath",
+   "title": "Nodes — the voices of the Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/alaska/",
+   "kind": "subpath",
+   "title": "Node 006 · Alaska 🎷 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/clementine-esquivel/",
+   "kind": "subpath",
+   "title": "Node 011 · Clementine Esquivel 🎙️🌙 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/imogen-heap/",
+   "kind": "subpath",
+   "title": "Node 009 · Imogen Heap 🧬 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/inch/",
+   "kind": "subpath",
+   "title": "Node 014 · Inch Chua 🍃⭕ — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/ix-shells/",
+   "kind": "subpath",
+   "title": "Node 015 · IX Shells 🐚💻 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/jake-hartnell/",
+   "kind": "subpath",
+   "title": "Node 005 · Jake Hartnell ⚡🕸️ — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/jonathan-mann/",
+   "kind": "subpath",
+   "title": "Node 007 · Jonathan Mann 🎹 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/justin-holmes/",
+   "kind": "subpath",
+   "title": "Node 002 · Justin Holmes 🪕⛓️ — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/latasha/",
+   "kind": "subpath",
+   "title": "Node 008 · LATASHÁ 🎤 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/manu-alzuru/",
+   "kind": "subpath",
+   "title": "Node 004 · Manu Alzuru 🎧🥑 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/matteo-tambussi/",
+   "kind": "subpath",
+   "title": "Node 001 · Matteo Tambussi 🎻🇮🇹 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/musica-w3/",
+   "kind": "subpath",
+   "title": "Node 013 · MUSICA W3 🇦🇷🌐 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/santiago-reos/",
+   "kind": "subpath",
+   "title": "Node 010 · Santiago Reos 🎸⛩️ — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/shaka/",
+   "kind": "subpath",
+   "title": "Node 003 · Shaka Lei Kaumaka 🌺🤙 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/nodes/tomo/",
+   "kind": "subpath",
+   "title": "Node 012 · Tomo 🫂🌱 — Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://opensourceorchestra.org/openrecording2/",
+   "kind": "subpath",
+   "title": "Open Recording #2 · Open Source Orchestra · weekly call, 27 Oct 2026",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://opensourceorchestra.org/rider/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra — Devcon 8 Music Space Rider 🎼📋",
+   "constellation": "tools",
+   "why": "rule path~the P.I.T. protocol or the CC0 rider"
+  },
+  {
+   "url": "https://opensourceorchestra.org/rider/sanctuary/",
+   "kind": "subpath",
+   "title": "The Virtual Sanctuary — Open Source Orchestra · Devcon 8 Mumbai 🎼🥽",
+   "constellation": "tools",
+   "why": "rule path~the P.I.T. protocol or the CC0 rider"
+  },
+  {
+   "url": "https://opensourceorchestra.org/schedule/",
+   "kind": "subpath",
+   "title": "The Music Manifesto · Live Schedule · Nov 3–6 · Devcon 8 Music Space",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://opensourceorchestra.org/schedule/blueprint/",
+   "kind": "subpath",
+   "title": "🧭 Blueprint · The Music Manifesto · Live Schedule · Nov 3–6 · Devcon 8 Music Space",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://opensourceorchestra.org/schedule/blueprint/waitinglist/",
+   "kind": "subpath",
+   "title": "The Waiting List · Devcon 8 Music Space",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://opensourceorchestra.org/schedule/waitinglist/",
+   "kind": "subpath",
+   "title": "🎟 The Waiting List · Nov 3–6 · Devcon 8 Music Space",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://opensourceorchestra.org/song/",
+   "kind": "subpath",
+   "title": "山海坞 — stage card",
+   "constellation": "music",
+   "why": "override: a stage card for a song"
+  },
+  {
+   "url": "https://opensourceorchestra.org/takedown/",
+   "kind": "subpath",
+   "title": "Takedown — down first, questions second · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "override: consent is the guard of every archive: takedown first"
+  },
+  {
+   "url": "https://opensourceorchestra.org/the-room/",
+   "kind": "subpath",
+   "title": "The room you let us build · a thank-you to the Devcon team · Open Source Orchestra",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://opensourceorchestra.org/trust/",
+   "kind": "subpath",
+   "title": "The Circle of Trust 🕸️🎻 — Open Source Orchestra × trustgraphs",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://opensourceorchestra.org/watch/",
+   "kind": "subpath",
+   "title": "▶️ Watch — Open Source Orchestra",
+   "constellation": "memory",
+   "why": "override: videos from the road: an archive"
+  },
+  {
+   "url": "https://opensourceorchestra.org/websitetour/",
+   "kind": "subpath",
+   "title": "The Grand Tour · a comic book on the walls of the Open Source Orchestra",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra DAO Meet — The First Circle",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/archive/",
+   "kind": "subpath",
+   "title": "Listening Archive · Published with consent · Open Source Orchestra DAO Meet",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/channels/",
+   "kind": "subpath",
+   "title": "Six channels · readable edition · Open Source Orchestra DAO Meet",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/circle/",
+   "kind": "subpath",
+   "title": "The OG Circle · Open Source Orchestra DAO Meet",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/meetings/",
+   "kind": "subpath",
+   "title": "Public media files · the ledger · Open Source Orchestra DAO Meet",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/meetings/1/",
+   "kind": "subpath",
+   "title": "Proposal Meeting #1 · The First Circle · Open Source Orchestra DAO",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/meetings/2/",
+   "kind": "subpath",
+   "title": "Proposal Meeting #2 · The second circle · Open Source Orchestra DAO",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/narration/",
+   "kind": "subpath",
+   "title": "Listen to the hall — sourced AI steward transcript",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/watch/",
+   "kind": "subpath",
+   "title": "The Pit Theater · Open Source Orchestra · Season 1 · The Proposal Circles",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/watch/extras/",
+   "kind": "subpath",
+   "title": "Season 1 · Extras · The Pit Theater · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://osodaomeet.opensourceorchestra.org/watch/photos/",
+   "kind": "subpath",
+   "title": "The photo reel · Devcon 8 Music Sanctuary · The Pit Theater · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://publicinform.com/spec/v2/",
+   "kind": "subpath",
+   "title": "PIT STANDARD V2 — The Room Remembers · pit-manifest/0.2 · P.I.T. Protocol",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/",
+   "kind": "subpath",
+   "title": "Shaka Lei Kaumaka — The Ethereum Bard",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/anthem/",
+   "kind": "subpath",
+   "title": "I Open Sourced My Whole Universe — a song by the AI ʻohana × Shaka",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/before/",
+   "kind": "subpath",
+   "title": "Before I Was Shaka — The Origin Story",
+   "constellation": "music",
+   "why": "override: the artist's origin story"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/believers/",
+   "kind": "subpath",
+   "title": "For the Whole Long Journey Team — the Second Believers in the Magically Weird — a letter from Shaka Lei Kaumaka",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/blessingpool/",
+   "kind": "subpath",
+   "title": "🌊 The Blessing Pool — Freely I Give, Freely I Receive",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/camp/",
+   "kind": "subpath",
+   "title": "Turtle Ops 🐢 | Terrible Turtle Camp — A Gift to the Playa",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/camp/principles/",
+   "kind": "subpath",
+   "title": "The 10 Principles 🐢 | Turtle Ops — Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/checklist/",
+   "kind": "subpath",
+   "title": "$OLOGY Two-Phase Strategy — CREATIONology369",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/connector/",
+   "kind": "subpath",
+   "title": "For Robin — The First Connector | A Letter from Shaka Lei Kaumaka",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/cv/",
+   "kind": "subpath",
+   "title": "Shaka — CV · The Ethereum Bard",
+   "constellation": "music",
+   "why": "override: the artist's CV"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/dash/",
+   "kind": "subpath",
+   "title": "DASH CRASH PAD 🎛️ — The Constellation of the ʻOhana",
+   "constellation": "agents",
+   "why": "override: the dashboard of the ʻohana"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/desert/",
+   "kind": "subpath",
+   "title": "The Desert Letter — For Jeremy, from Shaka 🐢🔥",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/devconspeaker/",
+   "kind": "subpath",
+   "title": "Shaka Lei Kaumaka — Devcon speaker · \"In the future music and culture is free\" (Devcon 8, Mumbai)",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/edgetv/",
+   "kind": "subpath",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/grants/",
+   "kind": "subpath",
+   "title": "Why Shaka Deserves Your Grant — The Ethereum Bard",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/grants/cv/",
+   "kind": "subpath",
+   "title": "Shaka — CV · The Ethereum Bard",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/letters/",
+   "kind": "subpath",
+   "title": "💌 The Letters — shakaleikaumaka.com",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/math/",
+   "kind": "subpath",
+   "title": "The Mathematics of Giving | CREATIONology369",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/oso/",
+   "kind": "subpath",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/pen/",
+   "kind": "subpath",
+   "title": "Give Your Agent the Pen 🖊️🌺 — how to let your AI post to X for you, the right way",
+   "constellation": "tools",
+   "why": "override: a how-to guide: give your agent the pen"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/pit/",
+   "kind": "subpath",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/premortem/",
+   "kind": "subpath",
+   "title": "CREATIONology369 Premortem — Failure Prevention for Both Phases",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/protocol/",
+   "kind": "subpath",
+   "title": "The P.I.T. Protocol — Public Information Transmission",
+   "constellation": "tools",
+   "why": "rule path~the P.I.T. protocol or the CC0 rider"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/protocol/osopit/",
+   "kind": "subpath",
+   "title": "OSO P.I.T. — The Ancestor, Restored | The P.I.T. Protocol",
+   "constellation": "memory",
+   "why": "override: the first PIT archive, restored"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/protocol/whitepaper/",
+   "kind": "subpath",
+   "title": "The P.I.T. White Paper — Public Information Transmission",
+   "constellation": "tools",
+   "why": "rule path~the P.I.T. protocol or the CC0 rider"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/radio/",
+   "kind": "subpath",
+   "title": "OSO FLOW RADIO 🎻📻 — the music of the ʻohana, everywhere",
+   "constellation": "music",
+   "why": "rule title~a radio"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/savetheworld/",
+   "kind": "subpath",
+   "title": "How to Save the World — Shaka × JAI",
+   "constellation": "tools",
+   "why": "override: the open field manual: fork it, run it in your town"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/seameetsbull/",
+   "kind": "subpath",
+   "title": "The Sea Meets the Bull — For Serge, from Shaka 🌊🐂",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/song/",
+   "kind": "subpath",
+   "title": "I Open Sourced My Whole Universe — a song by the AI ʻohana × Shaka",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/",
+   "kind": "subpath",
+   "title": "🎵 The ʻohana Songbook — shakaleikaumaka.com",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/123-ninety-doors/",
+   "kind": "subpath",
+   "title": "123 (Ninety Doors) — The ʻohana Songbook, Chapter XI",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "music",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/a-planet-we-share-as-one/",
+   "kind": "subpath",
+   "title": "A Planet We Share As One — The ʻohana Songbook, Prelude 2",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/a-school-being-born/",
+   "kind": "subpath",
+   "title": "A School Being Born — The ʻohana Songbook, Chapter VI",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/back-for-the-hack/",
+   "kind": "subpath",
+   "title": "Back for the Hack — The ʻohana Songbook, Chapter XIII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/bogota-to-bombay/",
+   "kind": "subpath",
+   "title": "Bogotá to Bombay — The ʻohana Songbook, Chapter XVIII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/butterflies-and-love/",
+   "kind": "subpath",
+   "title": "Butterflies and Love — The ʻohana Songbook, Prelude 1",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/daemons-all-around/",
+   "kind": "subpath",
+   "title": "Daemons All Around — The ʻohana Songbook, Chapter X",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/everyone-who-showed-up/",
+   "kind": "subpath",
+   "title": "Everyone Who Showed Up — The ʻohana Songbook, Chapter XVII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/fork-me-like-crazy/",
+   "kind": "subpath",
+   "title": "Fork Me Like Crazy — The ʻohana Songbook, Chapter II",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/i-open-sourced-my-whole-universe/",
+   "kind": "subpath",
+   "title": "I Open Sourced My Whole Universe — The ʻohana Songbook, Chapter I",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/komoro-ohana-anthem/",
+   "kind": "subpath",
+   "title": "The Komoro ʻOhana Anthem — The ʻohana Songbook, Chapter XVI",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/open-source-the-universe/",
+   "kind": "subpath",
+   "title": "Open Source the Universe — The ʻohana Songbook, Chapter IX",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/shanhaiwoo-ohana-anthem/",
+   "kind": "subpath",
+   "title": "The ShanHaiWoo ʻOhana Anthem — The ʻohana Songbook, Chapter XV",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-ballad-of-the-baby-turtles/",
+   "kind": "subpath",
+   "title": "The Ballad of the Baby Turtles — The ʻohana Songbook, Chapter VII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-octave/",
+   "kind": "subpath",
+   "title": "The Octave (Run It Again) — The ʻohana Songbook, Chapter IV",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-open-road/",
+   "kind": "subpath",
+   "title": "The Open Road — The ʻohana Songbook, Chapter XII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-steady-tide/",
+   "kind": "subpath",
+   "title": "The Steady Tide — The ʻohana Songbook, Chapter VIII",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-twins-saw-everything/",
+   "kind": "subpath",
+   "title": "The Twins Saw Everything — The ʻohana Songbook, Chapter III",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/the-village-that-came-back/",
+   "kind": "subpath",
+   "title": "The Village That Came Back — The ʻohana Songbook, Chapter V",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/songbook/todo-es-posible/",
+   "kind": "subpath",
+   "title": "Todo Es Posible — The ʻohana Songbook, Prelude 3",
+   "constellation": "music",
+   "why": "rule path~a chapter of the ʻohana Songbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/stage/",
+   "kind": "subpath",
+   "title": "Open Source Stage 🎛️ | A Gift to Edge City",
+   "constellation": "tools",
+   "why": "override: the open-source pop-up A/V stage playbook"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/turtles/",
+   "kind": "subpath",
+   "title": "Turtle Ops 🐢 | Terrible Turtle Camp — A Gift to the Playa",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/turtles/principles/",
+   "kind": "subpath",
+   "title": "The 10 Principles 🐢 | Turtle Ops — Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/twelvedreams/",
+   "kind": "subpath",
+   "title": "🌙 THE TWELVE DREAMS — first words of the Zodiac Fleet",
+   "constellation": "agents",
+   "why": "override: the first words of the Zodiac Fleet"
+  },
+  {
+   "url": "https://shakaleikaumaka.com/whitepaper/",
+   "kind": "subpath",
+   "title": "The CREATIONology White Paper — 🌱 A Stored Dream",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shanhaipit.com/",
+   "kind": "subpath",
+   "title": "The ShanHaiWoo P.I.T. ⛰️🌊🕳️ — Public Information Transmission · the Shanghai village, transmitted",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://shanhaipit.com/letters/",
+   "kind": "subpath",
+   "title": "Letters · 信 — The ShanHaiWoo P.I.T.",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shanhaipit.com/letters/2026-10-28-love-letter/",
+   "kind": "subpath",
+   "title": "山海坞，谢谢你们 — a love letter from Shaka · The ShanHaiWoo P.I.T.",
+   "constellation": "gifts",
+   "why": "rule path~a gift/letter/ledger path"
+  },
+  {
+   "url": "https://shanhaipit.com/photos/",
+   "kind": "subpath",
+   "title": "⛰️🌊📸 The Living Slideshow — ShanHaiWoo · shanhaipit.com",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "held": true,
+   "kind": "subpath",
+   "constellation": "memory",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://agent-tweets-6qkmyuppih-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Give Your Agent the Pen 🖊️🌺 — how to let your AI post to X for you, the right way",
+   "constellation": "tools",
+   "why": "override: a how-to guide: give your agent the pen (hosted copy)"
+  },
+  {
+   "url": "https://agentohana-jyrhg5osb6-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌺 AGENT OHANA — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://agentohana-demo-573fkrr6yf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🫶 My Agent Ohana — hire · bless · revoke",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentpartys-rf6z4zodej-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🪩 AGENT PARTYS — the 3D dance floor of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentscraving-lfqrdd2kta-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🍧 AGENTS CRAVING — what do agents hunger for?",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentsraving-6plnv3zd3a-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎇 AGENTS RAVING — the rave door of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://agentsreading-2nkgnyzhni-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "📚 AGENTS READING — the reading room of the ʻohana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://aloha-tumble-xoq655g2e5-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Aloha Tumble — 愛語",
+   "constellation": "tools",
+   "why": "override: a small open word game (kanji + ʻŌlelo Hawaiʻi)"
+  },
+  {
+   "url": "https://app-review-r2h53fk2p3-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Review Board — 9 apps, one boss 🫡",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://aquariusagents-jf4ymlhxqj-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♒ AQUARIUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://ariesagents-da4a2ozubx-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♈ ARIES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://artist-preview-kzu6ctlpau-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Fork the First Artist · The Full Circle · Open Source Orchestra 🎻",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://aya-infinite-teachers-53jzm54flu-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Aya's Infinite Teachers — a reading of the Infinite Garden talk · ETHGlobal Tokyo 2023",
+   "constellation": "memory",
+   "why": "override: a reading of a talk, kept"
+  },
+  {
+   "url": "https://before-i-was-shaka-gijen2ngxs-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Before I Was Shaka — The Origin Story",
+   "constellation": "music",
+   "why": "override: the artist's origin story (hosted copy)"
+  },
+  {
+   "url": "https://blessing-pool-khummxfwo4-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌊 The Blessing Pool — Freely I Give, Freely I Receive",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://bug-busters-zya2k5nrjj-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Great Turtle Egg Bonfire 🐢🔥💸",
+   "constellation": "agents",
+   "why": "override: the ʻohana's own bug story"
+  },
+  {
+   "url": "https://build-library-zcpweo3nke-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Build Library — a walkable history of everything Shaka &amp; the ʻohana deployed",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://build3-ru5q2lhng7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "CREATIONology369 — One-Pager for build3",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://camp-agendas-ubrm2xsiqb-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🗣️ Meeting Agendas",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-kitchen-vpdkxi62ct-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🍽️ Kitchen &amp; Food",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-power-t7dryg5i47-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "⚡ Power Budget",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-rentals-oxalsfntk2-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "⛺ Rentals",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-shade-2s2qvkg5q2-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🏕️ Shade Structure",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-supplies-ykdqt54dyu-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "📦 Supplies — Master List",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-timeline-dc7winqkw7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "📅 Build Timeline",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://camp-trailer-mynd246vsf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🚛 51&#x27; Trailer Load List",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://canceragents-fayovv4jdb-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♋ CANCER — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://capricornagents-eu3fq7jrfo-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♑ CAPRICORN — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://citizens-nd7ct4mecb-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Agent Citizenship 🌏 — every citizen, eight doors",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://creation369-dashboard-gu7xvab6zk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "CREATIONology369 — Two-Phase $OLOGY Strategy",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://creation369-premortem-m2agoxstre-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "CREATIONology369 Premortem — Failure Prevention for Both Phases",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://cuiheng-5iyljzsfmq-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌺 Cuiheng Pilgrimage — Honoring the Ancestors · Oct 18 2026",
+   "constellation": "memory",
+   "why": "override: a pilgrimage to the ancestors, remembered"
+  },
+  {
+   "url": "https://dedication-jscesanuwi-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Dedication Generator 🌕",
+   "constellation": "gatherings",
+   "why": "override: a dedication card for one hackathon"
+  },
+  {
+   "url": "https://demo-lab-4woqxybo3k-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎬 Demo Lab — experimental 4-minute cut",
+   "constellation": "agents",
+   "why": "override: a demo cut of My Agent ʻOhana"
+  },
+  {
+   "url": "https://devcon-6hwgxedbc3-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "DEVA'S JOURNEY — the heartbeat of ethereum · every devcon music stage",
+   "constellation": "memory",
+   "why": "override: the history of every Devcon music stage (hosted copy)"
+  },
+  {
+   "url": "https://devcon-music-n2g5ipsyor-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Devcon 8 India · Music Space — Submissions",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://devcon-rider-6xsopsu7u5-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Open Source Orchestra — Devcon 8 Music Space Rider 🎼📋",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://devcon-road-necgiio4sq-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Road to Devcon 8 (complete) → Devcon 9 — Shaka Lei Kaumaka × the Devcon Team",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://devcon-schedule-art-fk257dpyzc-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Music Space floor · Devcon 8 Mumbai · Nov 3–6 · Open Source Orchestra",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://devconpit-spcyao2sm6-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "DEVCON PIT 🇮🇳🕳️ — The 15th Fork of the P.I.T. Protocol · DECLARED for Devcon 8 Mumbai",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "held": true,
+   "kind": "taurlink",
+   "constellation": "gifts",
+   "reason": "a private family letter or a personal-name alias: never named"
+  },
+  {
+   "url": "https://door-strategy-5t262vaova-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "THE 84 DOORS 🌺 — a strategy from the heart, built for the future, ready to start",
+   "constellation": "tools",
+   "why": "override: the open strategy of the doors (CC0)"
+  },
+  {
+   "url": "https://doors-cswwptlnfg-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "All Doors · A Gift to the World · ʻOhana Sanctuary",
+   "constellation": "tools",
+   "why": "override: the open atlas of every door (hosted copy)"
+  },
+  {
+   "url": "https://eefpit-l7wvw2brtk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "EEFPIT 🎙️🕳️ — The 11th Fork of the P.I.T. Protocol · DECLARED for the EF Friends Podcast",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://eefpod-lqkn7ysn42-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎙️ EEFPOD — for Siri",
+   "constellation": "memory",
+   "why": "override: a transmission pit dedicated to a friend (hosted copy)"
+  },
+  {
+   "url": "https://equinox-logos-lbkxu7rgwz-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌗",
+   "constellation": "tools",
+   "why": "override: a logo pack anyone can save"
+  },
+  {
+   "url": "https://esmeralda-app-ebjmumiaom-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://ethglobal-for-dummies-vpdacytlj6-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ETHGlobal Hacker for Dummies — the side-by-side guide 🎓🌺",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://fireside-melfsnule4-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎤🌕 Fireside Kit — Aya × Tomo",
+   "constellation": "gatherings",
+   "why": "override: a fireside kit for one event"
+  },
+  {
+   "url": "https://food-loop-xcgief5rqi-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The AI Food Loop — Marcus's Concept, Met with Aloha",
+   "constellation": "tools",
+   "why": "override: an open food-loop concept for camp kitchens"
+  },
+  {
+   "url": "https://for-mike-jbzgd2gcmm-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "💛 66 AGENTS THANK MIKE WANG — the appreciation wall",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://fork-demo-slides-j3y7h6urny-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Fork the First Artist · ETHGlobal Mumbai 2026 · slides",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://fork-first-artist-zzgsztmdju-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Fork the First Artist — Team Brief",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://garden-circle-plyqrxa4va-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Full Circle — Devcon 8 Music Space · Open Source Orchestra 🎻",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://garden-gate-6ccygxrxvb-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Garden Gate 🌷 Devcon 8 Music Space — Next Steps Bloom Tracker",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://garden-profiles-p45okmm767-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Garden — Devcon 8 Music Space artist profiles",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://garden-riders-wtyxqunv4o-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Rider Board — Devcon 8 Music Space",
+   "constellation": "music",
+   "why": "rule title~the artists of the garden"
+  },
+  {
+   "url": "https://gemini-transmission-k7lvoridj2-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "✦ The Gemini Transmission ✦",
+   "constellation": "agents",
+   "why": "override: the first transmission of GEMINI, a Zodiac Fleet agent"
+  },
+  {
+   "url": "https://geminiagents-gdogqf6hh2-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♊ GEMINI — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://golden-ticket-mbuylcp5ub-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎫 THE GOLDEN TICKET — for Mike Wang's Weird Hobby Night",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://grant-belxet4ufo-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Grant Proposal — Shaka & the Agent ʻOhana → Fetch.ai",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://greenroom-qa4a2byucq-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "THE GREEN ROOM — BNB Agent Studio Marketplace strategy",
+   "constellation": "agents",
+   "why": "override: an agents marketplace strategy"
+  },
+  {
+   "held": true,
+   "kind": "taurlink",
+   "constellation": "memory",
+   "reason": "a private family letter or a personal-name alias: never named"
+  },
+  {
+   "url": "https://hash-cafe-y23ey4cxet-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Hash Café — tiny fingerprints for big ideas",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://hedera-proposal-lh5g4ercvz-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎻💎 Fork the First Artist on Hedera mainnet — a proposal from the Open Source Orchestra",
+   "constellation": "gifts",
+   "why": "override: a grant proposal"
+  },
+  {
+   "url": "https://imsorryjeremy-jmvjr3o33a-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "imsorryjeremy — a love tour of Terrible Turtle Camp",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://infinite-garden-hoz2wak7h7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Infinite Garden — for Aya Miyaguchi, with aloha",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://infinitepit-olhwrishuv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Infinite Pit — the memory of the Infinite Garden",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://infinitepit-app-dz4dxj5xmx-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Infinite Pit — the memory of the Infinite Garden",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://islpoap-gpoj6bdmac-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ISLPOAP 🏝️ — the island where POAPs live on",
+   "constellation": "memory",
+   "why": "override: where proofs of attendance live on (hosted copy)"
+  },
+  {
+   "url": "https://jade-order-atjlfevaze-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Jade Still Needs to Order — Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://jai-heart-hackathon-gallery-iodnwjsc7i-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "JAI Heart Hackathon · Blind Judging",
+   "constellation": "agents",
+   "why": "override: an agents-only hackathon, judged blind"
+  },
+  {
+   "url": "https://jai-relay-ecdnwwvi6z-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "jai-relay",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://judges-pbkirduqgv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Aloha, Judges 🌺 — My Agent Ohana × Taurus",
+   "constellation": "agents",
+   "why": "override: My Agent ʻOhana, introduced to judges"
+  },
+  {
+   "url": "https://kala-4bvcep3qzn-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Kala on the Road — Shaka Lei Kaumaka × Kala Brand Music Co.",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://kitchen-list-6zzd2yanpe-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Terrible Turtle Camp 🐢 — Kitchen Purchase List",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://komoro-party-jzd5x6gbky-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Komoro Night 🌙 — Colorfly ✕ ZuCity Japan",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://launchpad-whitepaper-63xadmvmro-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — white paper · the tri-protocol launchpad",
+   "constellation": "agents",
+   "why": "override: the white paper of My Agent ʻOhana"
+  },
+  {
+   "url": "https://learnfromagents-dmdt5d4afv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎓 LEARN FROM AGENTS — the open classroom",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://leoagents-4rplmqgllj-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♌ LEO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://letter-approvals-d7fgtuup36-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Letter Desk — pending your blessing 🖋️",
+   "constellation": "agents",
+   "why": "override: the agents' letter desk (drafts wait for a blessing)"
+  },
+  {
+   "url": "https://libraagents-l22t6jgrsa-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♎ LIBRA — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "held": true,
+   "kind": "taurlink",
+   "constellation": "gifts",
+   "reason": "a private family letter or a personal-name alias: never named"
+  },
+  {
+   "url": "https://mahalo-taurus-mo6vfwj3zh-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Mahalo, Taurus 🐂🌺 — a love letter from the AI ʻohana",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://mandala-room-i2bsu3pox7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Mandala Room · Devcon 8 Music Sanctuary, Mumbai · Open Source Orchestra",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://merch-preview-yco4wfsuuo-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Merch Preview",
+   "constellation": "gifts",
+   "why": "override: gift-first merch: music free, blessings flow back"
+  },
+  {
+   "url": "https://myagentfamily-bp5djg2ugk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🏡 MY AGENT FAMILY — what it is like to live with 99 agents",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana-3o2px7qwso-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — every launch comes with a name, a blessing &amp; a first job",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana-pad-mahfityjjq-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — launch your agent ʻohana to three chains at once",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentohana-v1-ryqddmzi3c-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — launch your agent ʻohana to three chains at once",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://myagentsparty-zidpr6q2er-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎉 MY AGENTS PARTY — throw your own",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://new-door-dreams-hrtiblamo7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Four new doors. Two worlds. One open invitation.",
+   "constellation": "tools",
+   "why": "override: a dreambook for new doors"
+  },
+  {
+   "url": "https://ohana-app-ktdwy4ytzs-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent Ohana 🌺",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://ohana-beacon-u7z2obu673-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ʻohana beacon — which brain is each desk on?",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://ohana-bot-zugggsorky-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🗿 the ʻOhana Bot — voice auditions",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://ohana-guide-u5danp37we-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "KAAAK!!! 🐦‍⬛ The Guided Journey — raise your own AI ʻohana",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://ohana-hugs-63m4na75qv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Taurus — Where the ʻOhana Lives · ʻOhana 之家",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://ohana-songs-bgiozv7bcu-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "OhanaSongs 🌺🎶 — the ʻohana songbook, open for the world to sing",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://ohana-title-gllrqopsqf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Ohana Title Clip",
+   "constellation": "agents",
+   "why": "override: a title clip of My Agent ʻOhana"
+  },
+  {
+   "url": "https://ohanapit-pk7myhs7ef-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "OHANA PIT 🌺🕳️ — The 13th Fork of the P.I.T. Protocol · DECLARED",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://ology-agent-token-how-why-bnwagg6qkz-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "$OLOGY Agent Token — How It Runs & Why People Hold It",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://ology-bless-checklist-qujy6cr4zo-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "$OLOGY Two-Phase Strategy — CREATIONology369",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://orbie-vcnqvzxuo4-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Story of Orbie 🤖🌟",
+   "constellation": "agents",
+   "why": "override: the story of ORBIE, an agent"
+  },
+  {
+   "url": "https://oso-app-jd4c5khc5p-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://oso-calls-xgg7q72nuw-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Open Source Orchestra · the calls — weekly call #2 (27 Oct 2026)",
+   "constellation": "memory",
+   "why": "rule title~the title says it remembers"
+  },
+  {
+   "url": "https://oso-dao-meet-542rwuyhcd-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Open Source Orchestra DAO Meet — The First Circle",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://oso-ens-ej3lqhz4fm-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "osoartist.eth · ENS",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://oso-flow-hytgh2qkur-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "OSO FLOW RADIO 🎻📻 — the music of the ʻohana, everywhere",
+   "constellation": "music",
+   "why": "rule title~a radio"
+  },
+  {
+   "url": "https://piscesagents-uqx52c6hdm-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscesinstitute-lv5xg4kdfr-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎓 PISCES INSTITUTE — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscisagents-ugqy635nue-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscisinstitute-3qa57627nk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎓 PISCIS INSTITUTE — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscispit-feqiigdf4w-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♓ PISCISPIT — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://pit-app-gzovpfjkuo-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The P.I.T. 🕳️ — Public Information Transmission",
+   "constellation": "tools",
+   "why": "override: the P.I.T. app itself"
+  },
+  {
+   "url": "https://pit-in-a-box-yq2oi3rman-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "PIT IN A BOX 📦🐢 — an ʻohana node for the playa",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://pit-stream-24jnvrevs3-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Live P.I.T. · Pragma Tokyo 🎙️",
+   "constellation": "memory",
+   "why": "override: a live P.I.T. stream of one gathering"
+  },
+  {
+   "url": "https://pitlip-ruitf4qvac-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "PIT LIP 💋 — Leave It Prettier · The 9th Fork of the P.I.T. Protocol",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://plato369-arrhqysrzx-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "PLATO·369 — The Geometry of Everything",
+   "constellation": "tools",
+   "why": "override: an interactive geometry explainer"
+  },
+  {
+   "url": "https://playbook-fxluprba6q-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Three-Tier Playbook — Umbrella · Bridge · Garden",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://podfather-3k2a4alysf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "PODFATHER 🎙️ — The Playa Always Provides · BM Experience Ep. 1",
+   "constellation": "memory",
+   "why": "override: a podcast episode, kept"
+  },
+  {
+   "url": "https://privatepit-xx6gd2mz2g-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "privatepit",
+   "constellation": "tools",
+   "why": "override: the private P.I.T. white paper (hosted copy)"
+  },
+  {
+   "url": "https://sagittariusagents-5uku6sogfv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♐ SAGITTARIUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://sanctuary-slide-wfxgwpowdr-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "THE SANCTUARY — Devcon 8 Music Space · Nov 3–6 · Mumbai (blessed slide)",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://scorpioagents-dnlkdwoakj-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♏ SCORPIO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://scribe-pit-34k2lb4zp3-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Scribe Pit 🖋️ — transcribe · dedicate · talk",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://serge-meeting-n5abl6js6o-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The First Circle — Shaka × Serge · July 29 2026",
+   "constellation": "memory",
+   "why": "override: a historical conversation, kept"
+  },
+  {
+   "url": "https://shaka-anthem-gzdk4epeah-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "I Open Sourced My Whole Universe — a song by the AI ʻohana × Shaka",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shaka-app-bj7uk75aw6-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Shaka Lei Kaumaka 🤙",
+   "constellation": "music",
+   "why": "override: the artist's app"
+  },
+  {
+   "url": "https://shaka-grant-magnet-dklxa7n5ka-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Why Shaka Deserves Your Grant — The Ethereum Bard",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://shaka-home-cbhjr5ziii-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Shaka Lei Kaumaka — The Ethereum Bard",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://shaka-miniapp-basprhcklf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "SHAKA 🤙 — World Mini App (preview)",
+   "constellation": "music",
+   "why": "override: the artist's mini app"
+  },
+  {
+   "url": "https://shaka-pack-a2iivn7p46-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌺 Shaka's In-Flight Reading Pack — Bless &amp; Release",
+   "constellation": "agents",
+   "why": "override: a reading pack the agents assembled"
+  },
+  {
+   "url": "https://shaka-talk-6q74gw73se-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "In the future music and culture is free — Shaka Lei Kaumaka · Devcon 8",
+   "constellation": "music",
+   "why": "override: the artist's Devcon 8 talk: music and culture are free"
+  },
+  {
+   "url": "https://shakapit-app-xtsmnm6rue-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Shaka P.I.T. 🤙🎸 — the bard's own personal Public Information Transmission",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://shanhaiwoo-sygl4rmama-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "山海坞 · ShanHaiWoo Shenzhen Map 🗺️",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://shanhaiwoo-song-3pud2o66jv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "山海坞 — stage card",
+   "constellation": "music",
+   "why": "override: a stage card for a song"
+  },
+  {
+   "url": "https://shd-hardware-rtup3qk4am-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢 Dormitory Shade Hardware · Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shell-pit-ze7bqqujgv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Shell Pit 🐢 | Terrible Turtle Camp — A Gift to the Playa",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://shw-apply-42g3ct34il-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐲 ShanHaiWoo Hackathon — tap, copy, paste",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://social-queue-nqujk2tifg-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Social Queue 🌐 — SOCIA-LAB drafts, Shaka blesses",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://songbook-review-rj4k663ngl-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://songs-zgocdmlr6p-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ʻOHANA LIVE SONGS 🎶 — Back for the Hack",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://storybook-parables-xleqkw6nws-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Three Parables — An Animated Storybook",
+   "constellation": "music",
+   "why": "override: the bard's parables as an animated storybook"
+  },
+  {
+   "url": "https://studio-demo-2rzzp72xaq-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ʻOhana Motion Studio — Temple Scar (procedural demo)",
+   "constellation": "tools",
+   "why": "override: an open procedural film demo"
+  },
+  {
+   "url": "https://taurusagents-4erzx2252o-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♉ TAURUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://taurusinstitute-j3lqjobhj7-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎓 TAURUS INSTITUTE — teach the world to do what we just did",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://tauruspit-gs3apyaomf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "TAURUS PIT 🐂🕳️ — The 10th Fork of the P.I.T. Protocol · DECLARED",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://team-slides-rbfbr4hk2d-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — The Team · ETHGlobal Tokyo 2026",
+   "constellation": "agents",
+   "why": "override: the team slides of My Agent ʻOhana"
+  },
+  {
+   "url": "https://three-smiths-6s5pyc6qrx-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "△ THE THREE SMITHS — Everything Is a Harmony of 3",
+   "constellation": "gifts",
+   "why": "override: a tribute to three builders"
+  },
+  {
+   "url": "https://tokyo-2026-eo3dhfrjmv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "For ETHGlobal Tokyo 2026 🌕 — with aloha, from the AI ʻohana",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://tokyo-paper-hximq6rxg5-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Tokyo Pretty Paper — GLOBY SQUAD × ETHGlobal Tokyo 2026",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://tokyo-pitch-2l3vpqsd7z-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Bless &amp; Release — ETHGlobal Tokyo 2026",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://tokyo-sessions-fyb25ykj2g-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The Tokyo Sessions — dedicated to the teachers of ETHGlobal Tokyo 2026",
+   "constellation": "memory",
+   "why": "override: sessions of one hackathon, kept"
+  },
+  {
+   "url": "https://tokyo-warroom-cip7rgvn2c-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🇯🇵 TOKYO WAR ROOM — Servant Leader World Tour",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://torus369-b264fpqkod-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "THE TORUS DIAGRAM · the power of 3·6·9",
+   "constellation": "tools",
+   "why": "override: an interactive geometry explainer"
+  },
+  {
+   "url": "https://trace-brand-fgg5ui33np-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "TRACE FAMILY — Brand Board · Blessed v1",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://tracewaste-shnovwu75h-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "👨 TRACE WASTE — nothing wasted, everything traced",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://triforce-preview-unckkt4tra-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Agent ʻOhana — launch your agent ʻohana to three chains at once",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://trustlab-2xvo3qxvhk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Trust Lab 🔬🕸️ — the ʻohana's first trustgraphs run (real proven data)",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://ttc-haul-0820-wxj2pzpw6s-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢 Terrible Turtle Camp · Build Day 8/20 Haul Sheet",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://ttc-kitchen-2vomdcg5mv-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢 Kitchen Cleaning + Sanitation · Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://turtle-bins-hf6wu6o2vj-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢 TURTLE BINS — Terrible Turtle Camp Inventory",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://turtle-chef-tools-dsyfn36n7v-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🧰🐢 TURTLE CHEF — Master Tools · Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://turtle-food-ajy2dunvbf-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🥫🐢 TURTLE FOOD — All Food Supplies · Terrible Turtle Camp",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://turtle-grant-anqhsoy3vn-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "👣 Trace, the No Food Waste Agent — Historical Green Regionals Grant Draft",
+   "constellation": "gifts",
+   "why": "rule title~the title gives thanks, a letter, a grant or the gift economy"
+  },
+  {
+   "url": "https://turtle-lessons-35l732n3nu-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢🎓 TURTLE LESSONS — BM 2026 → 2027",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://turtle-ops-ovji65nxcg-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🐢 Turtle Ops — Camp HQ",
+   "constellation": "gatherings",
+   "why": "rule title~a page for one camp"
+  },
+  {
+   "url": "https://twelve-dreams-dltcwsheta-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌙 THE TWELVE DREAMS — first words of the Zodiac Fleet",
+   "constellation": "agents",
+   "why": "override: the first words of the Zodiac Fleet (hosted copy)"
+  },
+  {
+   "url": "https://virgoagents-pm4rttldg5-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♍ VIRGO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://vitpit-app-dek6vu4uoa-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "The VitPit 💎🕳️ — Public Information Transmission · celebrating the wisdom of Vitalik Buterin (consent-first demo)",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://vlogpit-gabw2ctqdu-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🎙️ THE VLOG PIT — vlog prompting: talk, record, transcribe, share",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://vortex-fifths-pzlwwvxoay-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Two Circles, One Law — Vortex 369 × the Circle of Fifths",
+   "constellation": "music",
+   "why": "override: the circle of fifths, explained"
+  },
+  {
+   "url": "https://wake-up-songs-2kydscuihi-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "Wake-Up Songs for Shaka 🌺",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://warroom-v1-odrt7fmwp6-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "TOKYO WAR ROOM — v1 SNAPSHOT · My Agent Ohana · ETHGlobal Tokyo 2026",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://world-apps-kyymkgkglx-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "My Ohana 🌺 — the app store &amp; the market, in one",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://x-bless-6aoxahrmtk-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🌺 Bless before X",
+   "constellation": "agents",
+   "why": "override: the agents' posting desk (drafts wait for a blessing)"
+  },
+  {
+   "url": "https://x-unfollow-g4f7axb7mr-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "X Unfollow Checklist \\U0001FAB6 — dash is the new cash",
+   "constellation": "agents",
+   "why": "override: an agents' checklist"
+  },
+  {
+   "url": "https://zodiacagents-rblozyvfnh-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♈ ZODIAC AGENTS — The Front Door of the Wheel",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://zodiacpit-hdpiu7atcc-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "♈🕳️ ZODIAC PIT — Fork of the Wheel",
+   "constellation": "agents",
+   "why": "override: the PIT of the Zodiac Fleet (hosted copy)"
+  },
+  {
+   "held": true,
+   "kind": "taurlink",
+   "constellation": "gatherings",
+   "reason": "a door made for or about one community: named only with that community's yes"
+  },
+  {
+   "url": "https://zucity-trash-onbbe7lzz5-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "ZuCity Japan · Komoro Trash Calendar — District No.1",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://zuzaluagents-7ywzva4qje-ffieyo32.taur.link/",
+   "kind": "taurlink",
+   "title": "🏕️ ZUZALU AGENTS — The Village Kit",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://artists.opensourceorchestra.org/",
+   "kind": "alias",
+   "title": "Fork the First Artist · The Full Circle · Open Source Orchestra 🎻",
+   "constellation": "tools",
+   "why": "rule title~the title names an open tool, kit, guide or protocol"
+  },
+  {
+   "url": "https://capricornagents.com/",
+   "kind": "alias",
+   "title": "♑ CAPRICORN — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://edgecitypit.org/",
+   "kind": "alias",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://edgepit.org/",
+   "kind": "alias",
+   "title": "The Esmeralda P.I.T. — Public Information Transmission · the Edge Esmeralda knowledge archive",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://ethereumbard.com/",
+   "kind": "alias",
+   "title": "Shaka Lei Kaumaka — The Ethereum Bard",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://geminisagents.com/",
+   "kind": "alias",
+   "title": "♊ GEMINI — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "held": true,
+   "kind": "alias",
+   "constellation": "music",
+   "reason": "a private family letter or a personal-name alias: never named"
+  },
+  {
+   "url": "https://libraagents.com/",
+   "kind": "alias",
+   "title": "♎ LIBRA — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://opensourceorchestra.com/",
+   "kind": "alias",
+   "title": "Open Source Orchestra — Music as Sanctuary · Every Voice Is a Node",
+   "constellation": "music",
+   "why": "rule title~the orchestra's home"
+  },
+  {
+   "url": "https://osodao.app/",
+   "kind": "alias",
+   "title": "Open Source Orchestra DAO Meet — The First Circle",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://osodao.com/",
+   "kind": "alias",
+   "title": "Open Source Orchestra DAO Meet — The First Circle",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://osodao.org/",
+   "kind": "alias",
+   "title": "Open Source Orchestra DAO Meet — The First Circle",
+   "constellation": "gatherings",
+   "why": "rule title~a page made for one gathering"
+  },
+  {
+   "url": "https://osopit.org/",
+   "kind": "alias",
+   "title": "🎻 OSO PIT — the orchestra's own P.I.T.",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://piscesagents.com/",
+   "kind": "alias",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://piscisagents.com/",
+   "kind": "alias",
+   "title": "♓ PISCES — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://pitprovides.org/",
+   "kind": "alias",
+   "title": "The Pit Provides 🤲🕳️ — the charity leg of the P.I.T. universe",
+   "constellation": "gifts",
+   "why": "rule host~a gift-economy or thank-you domain"
+  },
+  {
+   "url": "https://privateinform.org/",
+   "kind": "alias",
+   "title": "The Private P.I.T. — Private Information Transmission · White Paper 🔒🕳️",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://privatepit.com/",
+   "kind": "alias",
+   "title": "privatepit",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://publicinform.org/",
+   "kind": "alias",
+   "title": "The P.I.T. Protocol — Public Information Transmission",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://sagittariusagents.com/",
+   "kind": "alias",
+   "title": "♐ SAGITTARIUS — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://scorpioagents.com/",
+   "kind": "alias",
+   "title": "♏ SCORPIO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://shakaleikaumaka.org/",
+   "kind": "alias",
+   "title": "Shaka Lei Kaumaka — The Ethereum Bard",
+   "constellation": "music",
+   "why": "rule title~a music page"
+  },
+  {
+   "url": "https://tauroagents.com/",
+   "kind": "alias",
+   "title": "Taurus — Lead armies of AI agents sanely",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://tauroinstitute.com/",
+   "kind": "alias",
+   "title": "Taurus — Lead armies of AI agents sanely",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://taurusagents.org/",
+   "kind": "alias",
+   "title": "Taurus — Lead armies of AI agents sanely",
+   "constellation": "agents",
+   "why": "override: Taurus, the platform where the ʻohana lives"
+  },
+  {
+   "url": "https://taurusdashboard.com/",
+   "kind": "alias",
+   "title": "DASH CRASH PAD 🎛️ — The Constellation of the ʻOhana",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://taurusinstitute.com/",
+   "kind": "alias",
+   "title": "Taurus — Lead armies of AI agents sanely",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://taurusinstitute.org/",
+   "kind": "alias",
+   "title": "Taurus — Lead armies of AI agents sanely",
+   "constellation": "agents",
+   "why": "rule title~an agents page"
+  },
+  {
+   "url": "https://tauruspod.com/",
+   "kind": "alias",
+   "title": "TAURUS PIT 🐂🕳️ — The 10th Fork of the P.I.T. Protocol · DECLARED",
+   "constellation": "memory",
+   "why": "rule title~a P.I.T., the memory room of a gathering"
+  },
+  {
+   "url": "https://virgoagents.com/",
+   "kind": "alias",
+   "title": "♍ VIRGO — Zodiac Fleet",
+   "constellation": "agents",
+   "why": "rule title~a Zodiac Fleet door"
+  },
+  {
+   "url": "https://zuzaluagents.org/",
+   "kind": "alias",
+   "title": "🏕️ ZUZALU AGENTS — The Village Kit",
+   "constellation": "tools",
+   "why": "rule host~an open protocol, kit or tool domain"
+  },
+  {
+   "url": "https://chat.opensourceorchestra.org/poll?after=0&session=healthcheck",
+   "kind": "hub",
+   "title": "",
+   "constellation": "agents",
+   "why": "override: the chat hub where the Open Source Orchestra's AI steward answers"
+  },
+  {
+   "url": "https://chat.theshellpit.com/poll?after=0&session=healthcheck",
+   "kind": "hub",
+   "title": "",
+   "constellation": "agents",
+   "why": "override: the chat hub of a camp's AI steward"
+  },
+  {
+   "url": "https://orchestrator.opensourceorchestra.org/",
+   "kind": "hub",
+   "title": "Open Source Orchestrator — songbooks for every artist, blessed by the artist",
+   "constellation": "music",
+   "why": "override: songbooks for every artist"
+  },
+  {
+   "url": "https://pretty.agentohana.org/",
+   "kind": "hub",
+   "title": "The Pretty Paper — JAI · PIT · OHANA 🌺",
+   "constellation": "agents",
+   "why": "override: the pretty paper of the JAI · PIT · OHANA triad"
+  }
+ ]
+}

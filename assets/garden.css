@@ -370,3 +370,32 @@ section { scroll-margin-top: 24px; }
   .section { padding: 30px 0; }
   a { color: #174e32; }
 }
+
+/* Every door in the garden — generated section (tools/build-garden.py) */
+.garden-doors { background: linear-gradient(165deg, var(--bg-deep), var(--panel)); }
+.garden-constellations { display: grid; gap: 14px; }
+.garden-constellation { border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255, 255, 255, .03); }
+.garden-constellation[open] { background: rgba(255, 255, 255, .05); }
+.garden-constellation summary { display: grid; grid-template-columns: auto 1fr auto; gap: 6px 14px; align-items: baseline; padding: 20px 24px; cursor: pointer; list-style: none; }
+.garden-constellation summary::-webkit-details-marker { display: none; }
+.garden-constellation summary::after { content: "+"; grid-column: 3; grid-row: 1; color: var(--gold); font-family: var(--mono); font-size: 1.1rem; }
+.garden-constellation[open] summary::after { content: "–"; }
+.garden-emoji { font-size: 1.6rem; line-height: 1; }
+.garden-name { font-family: var(--serif); font-size: 1.35rem; color: var(--ink); }
+.garden-constellation summary small { grid-column: 2; color: var(--gold); font-family: var(--mono); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; }
+.garden-constellation summary .garden-line { grid-column: 2; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.garden-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px 22px; margin: 0; padding: 0 24px 22px; list-style: none; }
+.garden-list li { font-size: .82rem; line-height: 1.5; overflow-wrap: anywhere; }
+.garden-list a { color: var(--leaf); font-family: var(--mono); font-size: .76rem; text-decoration: none; }
+.garden-list a:hover, .garden-list a:focus-visible { color: var(--gold); text-decoration: underline; }
+.garden-list span { display: block; color: var(--muted); }
+.garden-list span i { color: var(--soft); font-style: normal; font-size: .72rem; }
+.garden-held, .garden-note { color: var(--muted); font-size: .8rem; line-height: 1.7; }
+.garden-held { padding: 0 24px 20px; font-style: italic; }
+.garden-note { margin-top: 34px; text-align: center; }
+.garden-note a { color: var(--leaf); }
+@media (max-width: 760px) {
+  .garden-constellation summary { padding: 16px 18px; }
+  .garden-list { grid-template-columns: 1fr; padding: 0 18px 18px; }
+  .garden-held { padding: 0 18px 16px; }
+}
